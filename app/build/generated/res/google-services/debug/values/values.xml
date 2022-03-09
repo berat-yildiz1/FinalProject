@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">402668729309-sf3petlss1vrcqv1po0r64cq02p4ajan.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">402668729309</string>
+    <string name="google_api_key" translatable="false">AIzaSyCmoBqTp03q5GnT4sOL66ln-FsrZDjtVEQ</string>
+    <string name="google_app_id" translatable="false">1:402668729309:android:c7b7cec8f148069668fc34</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCmoBqTp03q5GnT4sOL66ln-FsrZDjtVEQ</string>
+    <string name="google_storage_bucket" translatable="false">pop-finder-c631e.appspot.com</string>
+    <string name="project_id" translatable="false">pop-finder-c631e</string>
+</resources>

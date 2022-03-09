@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PopFinder</string>
+    <string name="API_KEY">AIzaSyDvJjUf-3fkBDkO5rW9VxnsvwZGSf6arwk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open_navigation_drawer">Open Drawer</string>
+    <string name="close_navigation_drawer">Open Drawer</string>
+
+</resources>
