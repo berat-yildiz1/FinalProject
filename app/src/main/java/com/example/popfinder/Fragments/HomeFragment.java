@@ -557,7 +557,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                 super.onScrolled ( recyclerView, dx, dy );
                 LinearLayoutManager linearLayoutManager2 = (LinearLayoutManager) recyclerView.getLayoutManager ();
                 int position = linearLayoutManager2.findFirstCompletelyVisibleItemPosition();
-                if(position>-1){
+                if(position>0){
                     TouristicPlaceModelClass touristicPlaceModelClass = touristicPlaceModelClassList.get ( position );
                     double lnttut1 = Double.valueOf ( touristicPlaceModelClass.getLats () );
                     double longtut = Double.valueOf ( touristicPlaceModelClass.getLongs () );

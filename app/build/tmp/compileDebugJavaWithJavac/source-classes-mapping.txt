@@ -89,12 +89,6 @@ com/example/popfinder/Fragments/SettingsFragment.java
  com.example.popfinder.Fragments.SettingsFragment$3
  com.example.popfinder.Fragments.SettingsFragment$4
  com.example.popfinder.Fragments.SettingsFragment$4$1
-com/example/popfinder/SplashActivity.java
- com.example.popfinder.SplashActivity
- com.example.popfinder.SplashActivity$1
-com/example/popfinder/MainActivity.java
- com.example.popfinder.MainActivity
- com.example.popfinder.MainActivity$1
 com/example/popfinder/Fragments/HomeFragment.java
  com.example.popfinder.Fragments.HomeFragment
  com.example.popfinder.Fragments.HomeFragment$1
@@ -105,3 +99,9 @@ com/example/popfinder/Fragments/HomeFragment.java
  com.example.popfinder.Fragments.HomeFragment$6
  com.example.popfinder.Fragments.HomeFragment$7
  com.example.popfinder.Fragments.HomeFragment$8
+com/example/popfinder/MainActivity.java
+ com.example.popfinder.MainActivity
+ com.example.popfinder.MainActivity$1
+com/example/popfinder/SplashActivity.java
+ com.example.popfinder.SplashActivity
+ com.example.popfinder.SplashActivity$1
