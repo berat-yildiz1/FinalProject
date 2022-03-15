@@ -43,14 +43,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.PopFinder" >
+        <activity android:name="com.example.popfinder.ForgetActivity" />
+        <activity android:name="com.example.popfinder.SignUpActivity" />
+        <activity android:name="com.example.popfinder.LoginActivity" />
+        <activity android:name="com.example.popfinder.MainActivity" />
         <activity
-            android:name="com.example.popfinder.ForgetActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.popfinder.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.popfinder.LoginActivity"
+            android:name="com.example.popfinder.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,6 +56,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -69,13 +70,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity
-            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
-        <activity
-            android:name="com.example.popfinder.MainActivity"
-            android:exported="false" >
-        </activity>
         <activity
             android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
             android:exported="false"

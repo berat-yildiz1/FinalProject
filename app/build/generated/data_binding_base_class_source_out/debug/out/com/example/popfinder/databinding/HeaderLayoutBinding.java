@@ -5,12 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.popfinder.R;
 import com.github.florent37.shapeofview.shapes.ArcView;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,9 +24,23 @@ public final class HeaderLayoutBinding implements ViewBinding {
   @NonNull
   public final ArcView header;
 
-  private HeaderLayoutBinding(@NonNull RelativeLayout rootView, @NonNull ArcView header) {
+  @NonNull
+  public final CircleImageView imgHeader;
+
+  @NonNull
+  public final TextView txtHeaderEmail;
+
+  @NonNull
+  public final TextView txtHeaderName;
+
+  private HeaderLayoutBinding(@NonNull RelativeLayout rootView, @NonNull ArcView header,
+      @NonNull CircleImageView imgHeader, @NonNull TextView txtHeaderEmail,
+      @NonNull TextView txtHeaderName) {
     this.rootView = rootView;
     this.header = header;
+    this.imgHeader = imgHeader;
+    this.txtHeaderEmail = txtHeaderEmail;
+    this.txtHeaderName = txtHeaderName;
   }
 
   @Override
@@ -60,7 +76,26 @@ public final class HeaderLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HeaderLayoutBinding((RelativeLayout) rootView, header);
+      id = R.id.imgHeader;
+      CircleImageView imgHeader = ViewBindings.findChildViewById(rootView, id);
+      if (imgHeader == null) {
+        break missingId;
+      }
+
+      id = R.id.txtHeaderEmail;
+      TextView txtHeaderEmail = ViewBindings.findChildViewById(rootView, id);
+      if (txtHeaderEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.txtHeaderName;
+      TextView txtHeaderName = ViewBindings.findChildViewById(rootView, id);
+      if (txtHeaderName == null) {
+        break missingId;
+      }
+
+      return new HeaderLayoutBinding((RelativeLayout) rootView, header, imgHeader, txtHeaderEmail,
+          txtHeaderName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -36,7 +36,7 @@
                         android:id="@+id/imgProfile"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:src="@drawable/iremkeke"
+                        android:src="@drawable/beratkeke"
 
                         />
 
@@ -58,7 +58,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:drawablePadding="10dp"
-                    android:text="Muhammad Adnan"
+                    android:text="Berat Yıldız"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -124,7 +124,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.5"
-                                android:text="Muhamadnan@gmail.com"
+                                android:text="brtyldzq@gmail.com"
                                 android:textColor="@color/itemTextColor"
                                 android:textSize="15dp"
                                 android:textStyle="bold" />

@@ -541,7 +541,6 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
         touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.eskicarsi,"Safranbolu Eski Çarşı","Safranbolu Eski Çarşı","41.244124462650284","32.6932306109375" ));
 
     }
-
     private void initRecylerView() {
 
         recyclerView = binding.placesRecyclerView2;
@@ -556,7 +555,6 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled ( recyclerView, dx, dy );
-                mGoogleMap.clear ();
                 LinearLayoutManager linearLayoutManager2 = (LinearLayoutManager) recyclerView.getLayoutManager ();
                 int position = linearLayoutManager2.findFirstCompletelyVisibleItemPosition();
                 if(position>-1){
@@ -572,13 +570,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
 
                 }
-
-
-
             }
         } );
-
-
     }
 
 

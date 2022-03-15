@@ -2325,6 +2325,7 @@ drawable amu_bubble_mask
 drawable amu_bubble_shadow
 drawable avd_hide_password
 drawable avd_show_password
+drawable beratkeke
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2363,8 +2364,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable egrvale
 drawable eskicarsi
+drawable forget_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable header_background
 drawable hidirliktepesisafranbolu
 drawable ic_atm
 drawable ic_attach_image
@@ -2374,17 +2377,22 @@ drawable ic_car_wash
 drawable ic_clock_black_24dp
 drawable ic_direction
 drawable ic_edit
+drawable ic_email
 drawable ic_email_filled
+drawable ic_facebook
 drawable ic_gas_station
+drawable ic_google
 drawable ic_help
 drawable ic_home
 drawable ic_hospital
 drawable ic_hotel
 drawable ic_info
+drawable ic_instagram
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location
+drawable ic_lock
 drawable ic_lock_filled
 drawable ic_logout
 drawable ic_map_type
@@ -2395,6 +2403,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_my_location
 drawable ic_next
+drawable ic_person
 drawable ic_pharmacy
 drawable ic_rating
 drawable ic_restaurant
@@ -2406,6 +2415,7 @@ drawable iremkeke
 drawable kaymakamlarev
 drawable kentmuzesi
 drawable kristalteras
+drawable login_background
 drawable map_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -2450,6 +2460,8 @@ drawable quantum_ic_cloud_off_vd_theme_24
 drawable quantum_ic_search_grey600_24
 drawable safranboluevler
 drawable sekerkanyonu
+drawable signup_background
+drawable splash_background
 drawable tabatkrm
 drawable test_custom_background
 drawable test_level_drawable
@@ -2575,9 +2587,12 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAbout
 id btnBack
+id btnFacebook
 id btnForgetPassword
+id btnGoogle
 id btnHelp
 id btnHome
+id btnInstagram
 id btnLogin
 id btnMapType
 id btnNormal
@@ -2736,6 +2751,7 @@ id image
 id imageview
 id imageview1
 id imgCamera
+id imgHeader
 id imgPick
 id imgProfile
 id imgSaveLocation
@@ -3026,6 +3042,8 @@ id triangle
 id txtEEmail
 id txtEmail
 id txtForgetPassword
+id txtHeaderEmail
+id txtHeaderName
 id txtLogin
 id txtPlaceAddress
 id txtPlaceDRating
@@ -3130,6 +3148,7 @@ layout activity_forget
 layout activity_login
 layout activity_main
 layout activity_sign_up
+layout activity_splash
 layout amu_info_window
 layout amu_text_bubble
 layout amu_webview
@@ -3339,6 +3358,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string login_string
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection

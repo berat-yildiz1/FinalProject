@@ -17,6 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
+
     private ActivityLoginBinding binding;
     private String email, password;
     private LoadingDialog loadingDialog;
@@ -41,10 +42,7 @@ public class LoginActivity extends AppCompatActivity {
                 login();
             }
         });
-
-        FirebaseAuth.getInstance().signOut();
     }
-
 
     private void login() {
         loadingDialog.startLoading();

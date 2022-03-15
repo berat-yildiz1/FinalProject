@@ -12,5 +12,4 @@
     <item
         android:id="@+id/btnTerrain"
         android:title="Terrain" />
-
 </menu>

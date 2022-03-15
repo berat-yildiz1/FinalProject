@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,6 +23,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ImageView btnFacebook;
+
+  @NonNull
+  public final ImageView btnGoogle;
+
+  @NonNull
+  public final ImageView btnInstagram;
+
+  @NonNull
   public final MaterialButton btnLogin;
 
   @NonNull
@@ -36,10 +46,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView txtForgetPassword;
 
-  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull MaterialButton btnLogin,
-      @NonNull MaterialButton btnSignUp, @NonNull EditText edtEmail, @NonNull EditText edtPassword,
+  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull ImageView btnFacebook,
+      @NonNull ImageView btnGoogle, @NonNull ImageView btnInstagram,
+      @NonNull MaterialButton btnLogin, @NonNull MaterialButton btnSignUp,
+      @NonNull EditText edtEmail, @NonNull EditText edtPassword,
       @NonNull TextView txtForgetPassword) {
     this.rootView = rootView;
+    this.btnFacebook = btnFacebook;
+    this.btnGoogle = btnGoogle;
+    this.btnInstagram = btnInstagram;
     this.btnLogin = btnLogin;
     this.btnSignUp = btnSignUp;
     this.edtEmail = edtEmail;
@@ -74,6 +89,24 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnFacebook;
+      ImageView btnFacebook = ViewBindings.findChildViewById(rootView, id);
+      if (btnFacebook == null) {
+        break missingId;
+      }
+
+      id = R.id.btnGoogle;
+      ImageView btnGoogle = ViewBindings.findChildViewById(rootView, id);
+      if (btnGoogle == null) {
+        break missingId;
+      }
+
+      id = R.id.btnInstagram;
+      ImageView btnInstagram = ViewBindings.findChildViewById(rootView, id);
+      if (btnInstagram == null) {
+        break missingId;
+      }
+
       id = R.id.btnLogin;
       MaterialButton btnLogin = ViewBindings.findChildViewById(rootView, id);
       if (btnLogin == null) {
@@ -104,8 +137,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((RelativeLayout) rootView, btnLogin, btnSignUp, edtEmail,
-          edtPassword, txtForgetPassword);
+      return new ActivityLoginBinding((RelativeLayout) rootView, btnFacebook, btnGoogle,
+          btnInstagram, btnLogin, btnSignUp, edtEmail, edtPassword, txtForgetPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

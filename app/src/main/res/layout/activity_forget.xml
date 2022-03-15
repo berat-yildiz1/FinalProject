@@ -7,6 +7,12 @@
     android:background="@color/primaryColor"
     tools:context=".ForgetActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forget_background" />
 
     <ImageView
         android:id="@+id/btnBack"
@@ -28,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_email"
             android:drawablePadding="10dp"
             android:drawableTint="@color/white"
             android:hint="Email"
