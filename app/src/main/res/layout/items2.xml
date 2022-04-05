@@ -11,16 +11,16 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/imageview"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp">
 
             <ImageView
-                android:id="@+id/imageview1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:id="@+id/imgPlace"
+                android:layout_width="115dp"
+                android:layout_height="99dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/tokatlikanyn">
 
@@ -28,10 +28,10 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textview"
+            android:id="@+id/txtCity"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="53dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/imageview"
             android:text="Tokatlı Kanyonu"
@@ -42,10 +42,10 @@
         </TextView>
 
         <TextView
-            android:id="@+id/textview1"
+            android:id="@+id/txtinf2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="118dp"
             android:layout_marginTop="50dp"
             android:layout_toRightOf="@+id/imageview"
             android:text="infolar"
@@ -55,25 +55,26 @@
         </TextView>
 
         <TextView
-            android:id="@+id/lat1"
+            android:id="@+id/lat2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="83dp"
             android:layout_marginTop="80dp"
             android:layout_toRightOf="@+id/imageview"
-            android:text="lat1"
+            android:text="lat2"
             android:textColor="#000000"
             android:textSize="20sp">
 
         </TextView>
+
         <TextView
-            android:id="@+id/long1"
+            android:id="@+id/long2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="59dp"
             android:layout_marginTop="80dp"
-            android:layout_toRightOf="@+id/lat1"
-            android:text="lat1"
+            android:layout_toRightOf="@+id/lat2"
+            android:text="lat2"
             android:textColor="#000000"
             android:textSize="20sp">
 

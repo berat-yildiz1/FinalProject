@@ -4,10 +4,11 @@ package com.example.popfinder.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.FrameLayout;
+import android.widget.ListView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.popfinder.R;
@@ -17,20 +18,24 @@ import java.lang.String;
 
 public final class FragmentSavedPlacesBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
-  public final RecyclerView savedRecyclerView;
+  public final ListView listview;
 
-  private FragmentSavedPlacesBinding(@NonNull RelativeLayout rootView,
-      @NonNull RecyclerView savedRecyclerView) {
+  @NonNull
+  public final TextView textview;
+
+  private FragmentSavedPlacesBinding(@NonNull FrameLayout rootView, @NonNull ListView listview,
+      @NonNull TextView textview) {
     this.rootView = rootView;
-    this.savedRecyclerView = savedRecyclerView;
+    this.listview = listview;
+    this.textview = textview;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +60,19 @@ public final class FragmentSavedPlacesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.savedRecyclerView;
-      RecyclerView savedRecyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (savedRecyclerView == null) {
+      id = R.id.listview;
+      ListView listview = ViewBindings.findChildViewById(rootView, id);
+      if (listview == null) {
         break missingId;
       }
 
-      return new FragmentSavedPlacesBinding((RelativeLayout) rootView, savedRecyclerView);
+      id = R.id.textview;
+      TextView textview = ViewBindings.findChildViewById(rootView, id);
+      if (textview == null) {
+        break missingId;
+      }
+
+      return new FragmentSavedPlacesBinding((FrameLayout) rootView, listview, textview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

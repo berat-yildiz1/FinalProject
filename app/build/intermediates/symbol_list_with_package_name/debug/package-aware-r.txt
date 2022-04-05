@@ -2758,6 +2758,7 @@ id imageview1
 id imgCamera
 id imgHeader
 id imgPick
+id imgPlace
 id imgProfile
 id imgSaveLocation
 id imgthisplace
@@ -2776,6 +2777,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id lat1
+id lat2
 id layout
 id left
 id leftToRight
@@ -2786,7 +2788,9 @@ id line3
 id linear
 id listMode
 id list_item
+id listview
 id long1
+id long2
 id main_activity
 id masked
 id match_constraint
@@ -2929,7 +2933,6 @@ id row_index_key
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
-id savedRecyclerView
 id sawtooth
 id scale
 id screen
@@ -3045,6 +3048,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtCity
 id txtEEmail
 id txtEmail
 id txtForgetPassword
@@ -3055,6 +3059,7 @@ id txtPlaceAddress
 id txtPlaceDRating
 id txtPlaceName
 id txtUsername
+id txtinf2
 id unchecked
 id uniform
 id unlabeled
@@ -3186,6 +3191,7 @@ layout fragment_saved_places
 layout fragment_settings
 layout header_layout
 layout items
+layout items2
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

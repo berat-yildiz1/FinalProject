@@ -147,7 +147,7 @@ public class SaveScreenFragment extends Fragment {
                 places.setPlcLatit ( latdata );
 
 
-                databaseReference=firebaseDatabase.getReference ("Places").child ( edplcname.getText ().toString () );
+                databaseReference=firebaseDatabase.getReference ("Placesinfo").child ( edplcname.getText ().toString () );
                 databaseReference.addValueEventListener ( new ValueEventListener () {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

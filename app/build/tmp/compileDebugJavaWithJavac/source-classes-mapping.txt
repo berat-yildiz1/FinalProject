@@ -19,13 +19,8 @@ com/example/popfinder/PlaceModel.java
  com.example.popfinder.PlaceModel
 com/example/popfinder/databinding/ActivityMainBinding.java
  com.example.popfinder.databinding.ActivityMainBinding
-com/example/popfinder/Fragments/SaveScreenFragment.java
- com.example.popfinder.Fragments.SaveScreenFragment
- com.example.popfinder.Fragments.SaveScreenFragment$1
- com.example.popfinder.Fragments.SaveScreenFragment$2
- com.example.popfinder.Fragments.SaveScreenFragment$3
- com.example.popfinder.Fragments.SaveScreenFragment$3$1
- com.example.popfinder.Fragments.SaveScreenFragment$4
+com/example/popfinder/TouristicPlaceModelClass.java
+ com.example.popfinder.TouristicPlaceModelClass
 com/example/popfinder/databinding/ItemsBinding.java
  com.example.popfinder.databinding.ItemsBinding
 com/example/popfinder/Constant/AllConstant.java
@@ -34,19 +29,10 @@ com/example/popfinder/DataBindingTriggerClass.java
  com.example.popfinder.DataBindingTriggerClass
 com/example/popfinder/databinding/FragmentSettingsBinding.java
  com.example.popfinder.databinding.FragmentSettingsBinding
-com/example/popfinder/Fragments/HomeFragment.java
- com.example.popfinder.Fragments.HomeFragment
- com.example.popfinder.Fragments.HomeFragment$1
- com.example.popfinder.Fragments.HomeFragment$2
- com.example.popfinder.Fragments.HomeFragment$3
- com.example.popfinder.Fragments.HomeFragment$4
- com.example.popfinder.Fragments.HomeFragment$5
- com.example.popfinder.Fragments.HomeFragment$6
- com.example.popfinder.Fragments.HomeFragment$7
- com.example.popfinder.Fragments.HomeFragment$8
- com.example.popfinder.Fragments.HomeFragment$9
-com/example/popfinder/Fragments/SavedPlacesFragment.java
- com.example.popfinder.Fragments.SavedPlacesFragment
+com/example/popfinder/databinding/PlaceItemLayoutBinding.java
+ com.example.popfinder.databinding.PlaceItemLayoutBinding
+com/example/popfinder/Model/PhotoModel.java
+ com.example.popfinder.Model.PhotoModel
 com/example/popfinder/Model/GeometryModel.java
  com.example.popfinder.Model.GeometryModel
 com/example/popfinder/databinding/UsernameDialogLayoutBinding.java
@@ -88,6 +74,8 @@ com/example/popfinder/databinding/FragmentSaveScreenBinding.java
  com.example.popfinder.databinding.FragmentSaveScreenBinding
 com/example/popfinder/Model/LocationModel.java
  com.example.popfinder.Model.LocationModel
+com/example/popfinder/databinding/Items2Binding.java
+ com.example.popfinder.databinding.Items2Binding
 com/example/popfinder/databinding/HeaderLayoutBinding.java
  com.example.popfinder.databinding.HeaderLayoutBinding
 com/example/popfinder/WebServices/RetrofitAPI.java
@@ -113,9 +101,25 @@ com/example/popfinder/databinding/ActivitySignUpBinding.java
  com.example.popfinder.databinding.ActivitySignUpBinding
 com/example/popfinder/CurrentSavedPlacesModel.java
  com.example.popfinder.CurrentSavedPlacesModel
-com/example/popfinder/TouristicPlaceModelClass.java
- com.example.popfinder.TouristicPlaceModelClass
-com/example/popfinder/databinding/PlaceItemLayoutBinding.java
- com.example.popfinder.databinding.PlaceItemLayoutBinding
-com/example/popfinder/Model/PhotoModel.java
- com.example.popfinder.Model.PhotoModel
+com/example/popfinder/Fragments/HomeFragment.java
+ com.example.popfinder.Fragments.HomeFragment
+ com.example.popfinder.Fragments.HomeFragment$1
+ com.example.popfinder.Fragments.HomeFragment$2
+ com.example.popfinder.Fragments.HomeFragment$3
+ com.example.popfinder.Fragments.HomeFragment$4
+ com.example.popfinder.Fragments.HomeFragment$5
+ com.example.popfinder.Fragments.HomeFragment$6
+ com.example.popfinder.Fragments.HomeFragment$7
+ com.example.popfinder.Fragments.HomeFragment$8
+ com.example.popfinder.Fragments.HomeFragment$9
+com/example/popfinder/Fragments/SaveScreenFragment.java
+ com.example.popfinder.Fragments.SaveScreenFragment
+ com.example.popfinder.Fragments.SaveScreenFragment$1
+ com.example.popfinder.Fragments.SaveScreenFragment$2
+ com.example.popfinder.Fragments.SaveScreenFragment$3
+ com.example.popfinder.Fragments.SaveScreenFragment$3$1
+ com.example.popfinder.Fragments.SaveScreenFragment$4
+com/example/popfinder/Fragments/SavedPlacesFragment.java
+ com.example.popfinder.Fragments.SavedPlacesFragment
+ com.example.popfinder.Fragments.SavedPlacesFragment$1
+ com.example.popfinder.Fragments.SavedPlacesFragment$MyAdapter
