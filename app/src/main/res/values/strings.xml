@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">PopFinder</string>
-    <string name="API_KEY">AIzaSyDvJjUf-3fkBDkO5rW9VxnsvwZGSf6arwk</string>
+    <string name="API_KEY">AIzaSyDSmKG-vbUDa1afELFT1kcxff6H42pF1l0</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_string">Already have an account? <b>Login here</b></string>

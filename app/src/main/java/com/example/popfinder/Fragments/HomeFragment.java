@@ -3,6 +3,7 @@ package com.example.popfinder.Fragments;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -25,6 +26,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +36,8 @@ import com.example.popfinder.Adapter.GooglePlaceAdapter;
 import com.example.popfinder.Adapter.TouristicAdapter;
 import com.example.popfinder.Constant.AllConstant;
 import com.example.popfinder.GooglePlaceModel;
+import com.example.popfinder.LoginActivity;
+import com.example.popfinder.MainActivity;
 import com.example.popfinder.Model.GoogleResponseModel;
 import com.example.popfinder.Permissions.AppPermissions;
 import com.example.popfinder.PlaceModel;
@@ -151,6 +155,34 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
         binding.currentLocation.setOnClickListener(currentLocation -> getCurrentLocation());
 
+        binding.currentLocation.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(requireContext(), "Nice TRy Bero", Toast.LENGTH_SHORT).show();
+
+                Fragment newFragment = new SaveScreenFragment ();
+
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.fragmentContainer, newFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+
+                ;
+                String longg = String.valueOf ( currentLocation.getLongitude () );
+                String latt = String.valueOf ( currentLocation.getLatitude () );
+
+                Bundle result1 =  new Bundle ();
+                result1.putString ( "df1", longg );
+                Bundle result2 =  new Bundle ();
+                result2.putString ( "df1", latt );
+
+                getParentFragmentManager ().setFragmentResult ( "dataForm1",result1 );
+                getParentFragmentManager ().setFragmentResult ( "dataForm2",result2 );
+                return false;
+            }
+        });
+
         binding.placesGroup.setOnCheckedChangeListener(new ChipGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(ChipGroup group, int checkedId) {
@@ -173,6 +205,10 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
     }
 
+    public void SaveThisPlaces(){
+
+
+    }
 
 
 

@@ -2598,6 +2598,7 @@ id btnMapType
 id btnNormal
 id btnSatellite
 id btnSavedPlaces
+id btnSavethisplaces
 id btnSetting
 id btnSignUp
 id btnTerrain
@@ -2657,6 +2658,8 @@ id customPanel
 id cut
 id dark
 id dataBinding
+id dataform1
+id dataform2
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2692,6 +2695,8 @@ id easeInOut
 id easeOut
 id east
 id edit_query
+id edplcinfo
+id edplcname
 id edtDialogUsername
 id edtEmail
 id edtPassword
@@ -2755,6 +2760,7 @@ id imgHeader
 id imgPick
 id imgProfile
 id imgSaveLocation
+id imgthisplace
 id immediateStop
 id included
 id info
@@ -3175,6 +3181,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_layout
 layout fragment_home
+layout fragment_save_screen
 layout fragment_saved_places
 layout fragment_settings
 layout header_layout

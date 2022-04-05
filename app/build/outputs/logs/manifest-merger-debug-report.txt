@@ -9,6 +9,7 @@ MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\SAHIN\.gr
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\SAHIN\.gradle\caches\transforms-3\ce7b379093b7bedbf6229ac3904a3eef\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\SAHIN\.gradle\caches\transforms-3\3f1bb7f08fcdd134c23d6bf8f48c96d9\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.firebaseui:firebase-ui-database:7.1.1] C:\Users\SAHIN\.gradle\caches\transforms-3\018fa314318ebed75c29d7225fb7372c\transformed\jetified-firebase-ui-database-7.1.1\AndroidManifest.xml:2:1-13:12
+MERGED from [me.shaohui.advancedluban:library:1.3.5] C:\Users\SAHIN\.gradle\caches\transforms-3\f249e7b9ed694199239491ef9d4b74c8\transformed\jetified-library-1.3.5\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\SAHIN\.gradle\caches\transforms-3\c0d8a6f132b8a22fd542cac80cf007a5\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\SAHIN\.gradle\caches\transforms-3\af7e085656cc0436846770d551829765\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\SAHIN\.gradle\caches\transforms-3\8a7a06036e0c4f4e613a8bbc02ac21f5\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -101,6 +102,7 @@ MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\SAHIN\.
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\SAHIN\.gradle\caches\transforms-3\c4748cd6bd5cb29e127895c065f91fd7\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\SAHIN\.gradle\caches\transforms-3\7fac9b7446e65853a081bc45ba9e9751\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\SAHIN\.gradle\caches\transforms-3\dae4b5356522d72f7c6506b03b3f9f69\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\SAHIN\.gradle\caches\transforms-3\0ad05f948141782682d4f5975e90ceaa\transformed\jetified-rxandroid-2.0.1\AndroidManifest.xml:15:1-21:12
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-51:12
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-51:12
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-51:12
@@ -336,6 +338,8 @@ MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\SAHIN\.gradle\cach
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\SAHIN\.gradle\caches\transforms-3\3f1bb7f08fcdd134c23d6bf8f48c96d9\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [com.firebaseui:firebase-ui-database:7.1.1] C:\Users\SAHIN\.gradle\caches\transforms-3\018fa314318ebed75c29d7225fb7372c\transformed\jetified-firebase-ui-database-7.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-database:7.1.1] C:\Users\SAHIN\.gradle\caches\transforms-3\018fa314318ebed75c29d7225fb7372c\transformed\jetified-firebase-ui-database-7.1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [me.shaohui.advancedluban:library:1.3.5] C:\Users\SAHIN\.gradle\caches\transforms-3\f249e7b9ed694199239491ef9d4b74c8\transformed\jetified-library-1.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [me.shaohui.advancedluban:library:1.3.5] C:\Users\SAHIN\.gradle\caches\transforms-3\f249e7b9ed694199239491ef9d4b74c8\transformed\jetified-library-1.3.5\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\SAHIN\.gradle\caches\transforms-3\c0d8a6f132b8a22fd542cac80cf007a5\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\SAHIN\.gradle\caches\transforms-3\c0d8a6f132b8a22fd542cac80cf007a5\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\SAHIN\.gradle\caches\transforms-3\af7e085656cc0436846770d551829765\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
@@ -520,6 +524,8 @@ MERGED from [com.android.volley:volley:1.2.1] C:\Users\SAHIN\.gradle\caches\tran
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\SAHIN\.gradle\caches\transforms-3\7fac9b7446e65853a081bc45ba9e9751\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\SAHIN\.gradle\caches\transforms-3\dae4b5356522d72f7c6506b03b3f9f69\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\SAHIN\.gradle\caches\transforms-3\dae4b5356522d72f7c6506b03b3f9f69\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\SAHIN\.gradle\caches\transforms-3\0ad05f948141782682d4f5975e90ceaa\transformed\jetified-rxandroid-2.0.1\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\SAHIN\.gradle\caches\transforms-3\0ad05f948141782682d4f5975e90ceaa\transformed\jetified-rxandroid-2.0.1\AndroidManifest.xml:19:5-43
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
