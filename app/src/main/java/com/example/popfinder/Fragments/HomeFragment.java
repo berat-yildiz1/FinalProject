@@ -132,7 +132,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                 }
                 return true;
             });
-            
+
             popupMenu.show();
         });
 
@@ -262,10 +262,10 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                     .setPositiveButton ( "Ok", new DialogInterface.OnClickListener () {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                           requestLocation();
+                            requestLocation();
                         }
                     } )
-                .create().show();
+                    .create().show();
         }else{
             requestLocation();
         }
@@ -273,7 +273,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
     }
     private void  requestLocation(){
         requestPermissions ( new String []{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION
-        ,Manifest.permission.ACCESS_BACKGROUND_LOCATION},AllConstant.LOCATION_REQUEST_CODE );
+                ,Manifest.permission.ACCESS_BACKGROUND_LOCATION},AllConstant.LOCATION_REQUEST_CODE );
     }
 
     @Override

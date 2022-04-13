@@ -1,5 +1,6 @@
 package com.example.popfinder.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,8 +8,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.popfinder.Fragments.HomeFragment;
+import com.example.popfinder.Fragments.SaveScreenFragment;
+import com.example.popfinder.Fragments.SettingsFragment;
+import com.example.popfinder.Fragments.ToGoogleMap;
 import com.example.popfinder.R;
 import com.example.popfinder.TouristicPlaceModelClass;
 
@@ -41,6 +47,16 @@ public class TouristicAdapter extends RecyclerView.Adapter<TouristicAdapter.View
 
         holder.setData(resource,name,msg,lnt,longs);
 
+        holder.itemView.setOnClickListener ( new View.OnClickListener () {
+            @Override
+            public void onClick(View view) {
+                    //google link ayarla
+                AppCompatActivity activity = (AppCompatActivity)view.getContext ();
+                ToGoogleMap toGoogleMap = new ToGoogleMap ();
+                activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.homeMap,toGoogleMap ).addToBackStack ( null ).commit ();
+
+            }
+        } );
 
     }
 
@@ -49,7 +65,7 @@ public class TouristicAdapter extends RecyclerView.Adapter<TouristicAdapter.View
         return touristicplaceslist.size ();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder{
 
         private ImageView imageView;
         private TextView textView;
@@ -81,5 +97,6 @@ public class TouristicAdapter extends RecyclerView.Adapter<TouristicAdapter.View
             textView3.setText ( longs );
 
         }
+
     }
 }

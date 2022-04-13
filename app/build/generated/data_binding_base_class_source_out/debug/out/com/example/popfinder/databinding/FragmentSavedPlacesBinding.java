@@ -24,12 +24,16 @@ public final class FragmentSavedPlacesBinding implements ViewBinding {
   public final ListView listview;
 
   @NonNull
+  public final FrameLayout rec;
+
+  @NonNull
   public final TextView textview;
 
   private FragmentSavedPlacesBinding(@NonNull FrameLayout rootView, @NonNull ListView listview,
-      @NonNull TextView textview) {
+      @NonNull FrameLayout rec, @NonNull TextView textview) {
     this.rootView = rootView;
     this.listview = listview;
+    this.rec = rec;
     this.textview = textview;
   }
 
@@ -66,13 +70,15 @@ public final class FragmentSavedPlacesBinding implements ViewBinding {
         break missingId;
       }
 
+      FrameLayout rec = (FrameLayout) rootView;
+
       id = R.id.textview;
       TextView textview = ViewBindings.findChildViewById(rootView, id);
       if (textview == null) {
         break missingId;
       }
 
-      return new FragmentSavedPlacesBinding((FrameLayout) rootView, listview, textview);
+      return new FragmentSavedPlacesBinding((FrameLayout) rootView, listview, rec, textview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

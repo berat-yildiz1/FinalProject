@@ -2391,6 +2391,7 @@ drawable ic_instagram
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_launcher_safranbolu
 drawable ic_location
 drawable ic_lock
 drawable ic_lock_filled
@@ -2459,6 +2460,7 @@ drawable quantum_ic_clear_grey600_24
 drawable quantum_ic_cloud_off_vd_theme_24
 drawable quantum_ic_search_grey600_24
 drawable safranboluevler
+drawable saveplacescreendimg
 drawable sekerkanyonu
 drawable signup_background
 drawable splash_background
@@ -2753,6 +2755,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageolsun
 id imageview
 id imageview1
 id imgCamera
@@ -2765,6 +2768,7 @@ id imgthisplace
 id immediateStop
 id included
 id info
+id infoolsun
 id invisible
 id inward
 id italic
@@ -2778,6 +2782,7 @@ id jumpToStart
 id labeled
 id lat1
 id lat2
+id latolsun
 id layout
 id left
 id leftToRight
@@ -2791,6 +2796,7 @@ id list_item
 id listview
 id long1
 id long2
+id longolsun
 id main_activity
 id masked
 id match_constraint
@@ -2920,6 +2926,7 @@ id progress_horizontal
 id radio
 id rating
 id ratio
+id rec
 id rectangle
 id rectangles
 id reverseSawtooth
@@ -2933,6 +2940,7 @@ id row_index_key
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
+id savedplacestoname
 id sawtooth
 id scale
 id screen
@@ -3189,6 +3197,7 @@ layout fragment_home
 layout fragment_save_screen
 layout fragment_saved_places
 layout fragment_settings
+layout fragment_to_google_map
 layout header_layout
 layout items
 layout items2

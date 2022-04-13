@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_items2.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\items2.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -12,40 +8,16 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_map_background.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\map_background.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_hospital.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_hospital.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_my_location.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_my_location.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_place_item_layout.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\place_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_items.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\items.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_location.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_safranbolu.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_safranbolu.png"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
@@ -54,10 +26,6 @@
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_saved_places.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_saved_places.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_kristalteras.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\kristalteras.jpg"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_attach_image.png.flat",
@@ -72,10 +40,6 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_info.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_splash.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_sekerkanyonu.jpg.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\sekerkanyonu.jpg"
     },
@@ -84,40 +48,12 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\font\\playfair_display.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_gas_station.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_gas_station.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_attach_image.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_attach_image.png"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_person.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_person.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ncekayasukemeri.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ncekayasukemeri.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_bookmark.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-v24\\ic_bookmark.xml"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\menu_nav_menu.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\menu\\nav_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_setting.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_setting.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar_layout.xml.flat",
@@ -128,20 +64,12 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_hotel.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_attach_image.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-hdpi\\ic_attach_image.png"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\navigation_drawer_nav_graph.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\navigation\\drawer_nav_graph.xml"
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_saveplacescreendimg.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\saveplacescreendimg.jpg"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_direction.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-v24\\ic_direction.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_attach_image.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-mdpi\\ic_attach_image.png"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_traffic.xml.flat",
@@ -152,44 +80,8 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\signup_background.jpg"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_background.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\splash_background.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_layout.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\dialog_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_universites.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\universites.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_facebook.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_facebook.png"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_drawer_layout.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\nav_drawer_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_mosque_icon.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_mosque_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\menu_map_type_menu.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\menu\\map_type_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_restaurant.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_restaurant.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_next.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_next.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -200,44 +92,12 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_lock_filled.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_map_type.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_map_type.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_beratkeke.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xhdpi\\beratkeke.png"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_email_filled.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_email_filled.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_saloon.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_saloon.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_username_dialog_layout.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\username_dialog_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_header_background.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xhdpi\\header_background.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_to_google_map.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_to_google_map.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_header_layout.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\header_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_lock.xml.flat",
@@ -252,44 +112,16 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_pharmacy.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_pharmacy.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_save_screen.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_save_screen.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_email.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_tokatlikanyn.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\tokatlikanyn.jpg"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_shopping_cart.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_shopping_cart.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_logout.png"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forget.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_forget.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_tabatkrm.jpg.flat",
@@ -300,32 +132,12 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\safranboluevler.jpg"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_kaymakamlarev.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\kaymakamlarev.jpg"
-    },
-    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_edit.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_edit.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_hidirliktepesisafranbolu.jpg.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\hidirliktepesisafranbolu.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_iremkeke.png.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-ldpi\\iremkeke.png"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_cincihamami.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\cincihamami.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_egrvale.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\egrvale.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_forget_background.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\forget_background.jpg"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_kentmuzesi.jpg.flat",
@@ -352,6 +164,214 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_google.png"
     },
     {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_eskicarsi.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\eskicarsi.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_atm.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_atm.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_items2.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\items2.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_map_background.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\map_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_my_location.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_my_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_place_item_layout.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\place_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_items.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\items.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_kristalteras.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\kristalteras.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_gas_station.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_gas_station.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_attach_image.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_attach_image.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_person.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ncekayasukemeri.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ncekayasukemeri.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_bookmark.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-v24\\ic_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_setting.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_attach_image.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-hdpi\\ic_attach_image.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\navigation_drawer_nav_graph.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\navigation\\drawer_nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_attach_image.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-mdpi\\ic_attach_image.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_background.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\splash_background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_layout.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_universites.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\universites.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_facebook.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\ic_facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_drawer_layout.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\nav_drawer_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_mosque_icon.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_mosque_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\menu_map_type_menu.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\menu\\map_type_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_restaurant.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_restaurant.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_next.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_map_type.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_map_type.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_email_filled.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_email_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_beratkeke.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xhdpi\\beratkeke.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_saloon.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_saloon.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_username_dialog_layout.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\username_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_header_background.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xhdpi\\header_background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_save_screen.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_save_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_tokatlikanyn.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\tokatlikanyn.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forget.xml.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_forget.xml"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_kaymakamlarev.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\kaymakamlarev.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_iremkeke.png.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-ldpi\\iremkeke.png"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_cincihamami.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\cincihamami.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_egrvale.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\egrvale.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_forget_background.jpg.flat",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-xxhdpi\\forget_background.jpg"
+    },
+    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_attach_image.png.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-ldpi\\ic_attach_image.png"
     },
@@ -370,13 +390,5 @@
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_rating.xml.flat",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable-v24\\ic_rating.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_eskicarsi.jpg.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\eskicarsi.jpg"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_atm.xml.flat",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\drawable\\ic_atm.xml"
     }
 ]

@@ -7,12 +7,12 @@
     android:orientation="vertical"
     tools:context=".Fragments.SaveScreenFragment">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0.6"
-            android:scaleType="centerCrop"
-            android:src="@drawable/login_background" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/saveplacescreendimg" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,27 +23,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="90dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
             android:gravity="center"
             android:text="Save This Places"
-            android:textSize="30dp" />
+            android:textSize="40dp" />
+
         <TextView
             android:id="@+id/dataform2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="20dp"
-            android:hint="lat"
-            />
+
+            android:textSize="10dp" />
+
         <TextView
             android:id="@+id/dataform1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="20dp"
-            android:hint="long"
+            android:textSize="10dp"
+
             />
 
         <EditText
@@ -80,32 +81,43 @@
             android:textColor="#363636"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="184dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:fontFamily="@font/playfair_display"
-                android:text="Please Select İmage"
-                android:textSize="25dp"
-                android:textStyle="bold"
-
-
-                />
 
             <ImageView
                 android:id="@+id/imgthisplace"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="137dp"
+                android:layout_height="142dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
                 android:src="@android:drawable/ic_menu_gallery"
 
+
                 />
-        </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/playfair_display"
+
+
+                        android:text="Please Select İmage"
+                        android:textSize="25dp"
+
+                        android:textStyle="bold"
+
+                            />
+
+        </RelativeLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSavethisplaces"
@@ -113,11 +125,10 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/transparentColor"
+            android:backgroundTint="@color/purple_500"
             android:padding="15dp"
             android:text="Save Location"
             android:textStyle="bold"
-            android:textColor="#363636"
             app:cornerRadius="20dp"
             app:elevation="10dp"
             app:strokeColor="@color/white"

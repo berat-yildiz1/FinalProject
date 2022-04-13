@@ -3,6 +3,7 @@ package com.example.popfinder.Fragments;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.LayoutInflater;
@@ -15,7 +16,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.popfinder.CurrentSavedPlacesModel;
 import com.example.popfinder.R;
@@ -126,6 +129,8 @@ public class SavedPlacesFragment extends Fragment {
         List<CurrentSavedPlacesModel> stringList;
         TextView txtPlace;
         TextView txtinf2;
+        TextView lat2;
+        TextView long2;
         ImageView imgPlace;
 
         public MyAdapter(Context context, List<CurrentSavedPlacesModel> stringList) {
@@ -155,6 +160,12 @@ public class SavedPlacesFragment extends Fragment {
             txtPlace= view.findViewById ( R.id.txtCity );
             txtinf2=view.findViewById ( R.id.txtinf2 );
             imgPlace=view.findViewById ( R.id.imgPlace );
+            lat2=view.findViewById ( R.id.lat2 );
+            long2=view.findViewById ( R.id.long2 );
+
+            lat2.setText ( stringList.get ( i ).getPlcLatit () );
+            long2.setText ( stringList.get ( i ).getPlclong () );
+
 
             txtinf2.setText ( stringList.get ( i ).getPlcinfo () );
 
@@ -162,6 +173,51 @@ public class SavedPlacesFragment extends Fragment {
             txtPlace.setText ( stringList.get ( i ).getPlcName () );
             Bitmap bitmap = BitmapFactory.decodeByteArray ( imageAsByte,0, imageAsByte.length );
             imgPlace.setImageBitmap ( bitmap );
+
+            view.setOnClickListener ( new View.OnClickListener () {
+                @Override
+                public void onClick(View view) {
+
+                    Fragment newFragment = new ToGoogleMap ();
+
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                    transaction.replace(R.id.rec, newFragment);
+                    transaction.addToBackStack(null);
+                    transaction.commit();
+
+                    String long22 = String.valueOf ( stringList.get ( i ).getPlclong () );
+                    String lat22 = String.valueOf ( stringList.get ( i ).getPlcLatit () );
+                    String name22 = String.valueOf ( stringList.get ( i ).getPlcName () );
+                    String info22 = String.valueOf ( stringList.get ( i ).getPlcinfo () );
+                    String img22 = String.valueOf ( stringList.get ( i ).getPlcimage () );
+
+
+                    Bundle result11 =  new Bundle ();
+                    result11.putString ( "df11", long22 );
+
+                    Bundle result22 =  new Bundle ();
+                    result22.putString ( "df11",lat22 );
+
+
+                    Bundle result33 =  new Bundle ();
+                    result33.putString ( "df11", img22 );
+
+                    Bundle result44 =  new Bundle ();
+                    result44.putString ( "df11",name22 );
+
+                    Bundle result55 =  new Bundle ();
+                    result55.putString ( "df11",info22 );
+
+
+                    getParentFragmentManager ().setFragmentResult ( "dataForm11",result11 );
+                    getParentFragmentManager ().setFragmentResult ( "dataForm22",result22 );
+                    getParentFragmentManager ().setFragmentResult ( "dataForm33",result33 );
+                    getParentFragmentManager ().setFragmentResult ( "dataForm44",result44 );
+                    getParentFragmentManager ().setFragmentResult ( "dataForm55",result55 );
+
+                }
+            } );
 
             return view;
         }

@@ -17,6 +17,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Base64;
 import android.util.Log;
@@ -140,6 +141,8 @@ public class SaveScreenFragment extends Fragment {
             public void onClick(View view) {
                 CurrentSavedPlacesModel places = new CurrentSavedPlacesModel ();
                 //List<CurrentSavedPlacesModel> placeList = new ArrayList<> ();
+
+                if(edplcname.getText ()!=null && edinfo.getText ()!=null && encodeImage != null){
                 places.setPlcName ( edplcname.getText ().toString () );
                 places.setPlcinfo ( edinfo.getText ().toString () );
                 places.setPlcimage (encodeImage);
@@ -158,9 +161,25 @@ public class SaveScreenFragment extends Fragment {
                     public void onCancelled(@NonNull DatabaseError error) {
 
                     }
-                } );
 
+                } );
+                    Toast.makeText(requireContext(), "Successful ", Toast.LENGTH_SHORT).show();
+                    Fragment newFragment = new HomeFragment ();
+
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                    transaction.replace(R.id.fragmentContainer, newFragment);
+                    transaction.addToBackStack(null);
+                    transaction.commit();
+                }
+                else{
+                    edplcname.setText ( "" );
+                    edinfo.setText ("");
+
+                    Toast.makeText(requireContext(), "Please Fill All Entries ", Toast.LENGTH_SHORT).show();
+                }
             }
+
         } );
 
 
