@@ -496,6 +496,45 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
+attr fb_backgroundColor
+attr fb_borderColor
+attr fb_borderWidth
+attr fb_cornerRadius
+attr fb_disableColor
+attr fb_disableElementsColor
+attr fb_divColor
+attr fb_divHeight
+attr fb_divMarginBottom
+attr fb_divMarginEnd
+attr fb_divMarginStart
+attr fb_divMarginTop
+attr fb_divVisibility
+attr fb_divWidth
+attr fb_enableRipple
+attr fb_fontFamilyRes
+attr fb_icon
+attr fb_iconColor
+attr fb_iconHeight
+attr fb_iconMarginBottom
+attr fb_iconMarginEnd
+attr fb_iconMarginStart
+attr fb_iconMarginTop
+attr fb_iconPosition
+attr fb_iconVisibility
+attr fb_iconWidth
+attr fb_rippleColor
+attr fb_shadow
+attr fb_shape
+attr fb_text
+attr fb_textAllCaps
+attr fb_textColor
+attr fb_textPaddingBottom
+attr fb_textPaddingEnd
+attr fb_textPaddingStart
+attr fb_textPaddingTop
+attr fb_textSize
+attr fb_textStyle
+attr fb_textVisibility
 attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr flow_firstHorizontalBias
@@ -1253,6 +1292,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -2371,6 +2413,7 @@ drawable header_background
 drawable hidirliktepesisafranbolu
 drawable ic_atm
 drawable ic_attach_image
+drawable ic_baseline_add_24
 drawable ic_bookmark
 drawable ic_camera
 drawable ic_car_wash
@@ -2411,6 +2454,7 @@ drawable ic_restaurant
 drawable ic_saloon
 drawable ic_setting
 drawable ic_shopping_cart
+drawable ic_thumb_up
 drawable ic_traffic
 drawable iremkeke
 drawable kaymakamlarev
@@ -2577,6 +2621,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bold
 id bottom
 id bounce
 id bounceBoth
@@ -2588,10 +2633,12 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAbout
+id btnAddGuide
 id btnBack
 id btnFacebook
 id btnForgetPassword
 id btnGoogle
+id btnGuide
 id btnHelp
 id btnHome
 id btnInstagram
@@ -2604,6 +2651,8 @@ id btnSavethisplaces
 id btnSetting
 id btnSignUp
 id btnTerrain
+id btn_add
+id btn_save
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2612,6 +2661,7 @@ id cancel_button
 id cardEmail
 id cardLogout
 id cardPassword
+id cardview
 id carryVelocity
 id center
 id centerCrop
@@ -2628,6 +2678,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circle
 id circle_center
 id clear_text
 id clip_horizontal
@@ -2738,6 +2789,9 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guide_location
+id guide_name
+id guide_phone
 id guideline
 id header
 id header_title
@@ -2794,6 +2848,7 @@ id linear
 id listMode
 id list_item
 id listview
+id location
 id long1
 id long2
 id longolsun
@@ -2855,6 +2910,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navDrawer
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -2896,6 +2952,14 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id personAge
+id personAgeEdit
+id personNameAndSurname
+id personNameEdit
+id personSurnameEdit
+id personTitle
+id personTitleEdit
+id phone
 id pin
 id placesGroup
 id placesList
@@ -2929,6 +2993,7 @@ id ratio
 id rec
 id rectangle
 id rectangles
+id recycler_view
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3168,6 +3233,7 @@ layout activity_login
 layout activity_main
 layout activity_sign_up
 layout activity_splash
+layout add_guide_fragment
 layout amu_info_window
 layout amu_text_bubble
 layout amu_webview
@@ -3193,10 +3259,14 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_layout
+layout fragment_about
+layout fragment_add_guide
+layout fragment_help
 layout fragment_home
 layout fragment_save_screen
 layout fragment_saved_places
 layout fragment_settings
+layout fragment_show_guide
 layout fragment_to_google_map
 layout header_layout
 layout items
@@ -3270,6 +3340,8 @@ layout places_autocomplete_impl_fragment_overlay
 layout places_autocomplete_impl_powered_by_google
 layout places_autocomplete_impl_search_bar
 layout places_autocomplete_prediction
+layout popup_view
+layout row_guide
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -4254,6 +4326,7 @@ styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color dra
 styleable DrawerLayout elevation
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
+styleable FitButton android_enabled fb_backgroundColor fb_borderColor fb_borderWidth fb_cornerRadius fb_disableColor fb_disableElementsColor fb_divColor fb_divHeight fb_divMarginBottom fb_divMarginEnd fb_divMarginStart fb_divMarginTop fb_divVisibility fb_divWidth fb_enableRipple fb_fontFamilyRes fb_icon fb_iconColor fb_iconHeight fb_iconMarginBottom fb_iconMarginEnd fb_iconMarginStart fb_iconMarginTop fb_iconPosition fb_iconVisibility fb_iconWidth fb_rippleColor fb_shadow fb_shape fb_text fb_textAllCaps fb_textColor fb_textPaddingBottom fb_textPaddingEnd fb_textPaddingStart fb_textPaddingTop fb_textSize fb_textStyle fb_textVisibility
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing

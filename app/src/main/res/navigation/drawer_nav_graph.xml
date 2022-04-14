@@ -23,5 +23,27 @@
         android:label="fragment_saved_places"
         tools:layout="@layout/fragment_saved_places" />
 
+    <fragment
+        android:id="@+id/btnGuide"
+        android:name="com.example.popfinder.Fragments.ShowGuide"
+        android:label="guide_fragment"
+        tools:layout="@layout/fragment_show_guide" />
 
+    <fragment
+        android:id="@+id/btnAddGuide"
+        android:name="com.example.popfinder.Fragments.AddGuideFragment"
+        android:label="add_guide_fragment"
+        tools:layout="@layout/add_guide_fragment" />
+
+    <fragment
+        android:id="@+id/btnHelp"
+        android:name="com.example.popfinder.Fragments.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/btnAbout"
+        android:name="com.example.popfinder.Fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

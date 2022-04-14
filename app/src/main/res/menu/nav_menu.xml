@@ -11,15 +11,33 @@
             android:id="@+id/btnSavedPlaces"
             android:icon="@drawable/ic_location"
             android:title="Saved Places" />
-        <item
-            android:id="@+id/btnSetting"
-            android:icon="@drawable/ic_setting"
-            android:title="Settings" />
+
+
+
+        <item android:title="Guide">
+            android:icon="@drawable/ic_next"
+            <menu>
+                <item
+                    android:id="@+id/btnGuide"
+                    android:icon="@drawable/ic_next"
+                    android:title="Search Guide"
+                    />
+                <item
+                    android:id="@+id/btnAddGuide"
+                    android:icon="@drawable/ic_edit"
+                    android:title="Add Guide"
+                    />
+            </menu>
+        </item>
 
     </group>
 
     <item android:title="">
         <menu>
+            <item
+                android:id="@+id/btnSetting"
+                android:icon="@drawable/ic_setting"
+                android:title="Settings" />
 
             <item
                 android:id="@+id/btnHelp"
