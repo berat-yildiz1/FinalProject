@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.popfinder.databinding.ItemsBindingImpl;
 import com.example.popfinder.databinding.PlaceItemLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -18,11 +19,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_PLACEITEMLAYOUT = 1;
+  private static final int LAYOUT_ITEMS = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_PLACEITEMLAYOUT = 2;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.popfinder.R.layout.items, LAYOUT_ITEMS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.popfinder.R.layout.place_item_layout, LAYOUT_PLACEITEMLAYOUT);
   }
 
@@ -35,6 +39,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ITEMS: {
+          if ("layout/items_0".equals(tag)) {
+            return new ItemsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for items is invalid. Received: " + tag);
+        }
         case  LAYOUT_PLACEITEMLAYOUT: {
           if ("layout/place_item_layout_0".equals(tag)) {
             return new PlaceItemLayoutBindingImpl(component, view);
@@ -86,18 +96,20 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(3);
 
     static {
       sKeys.put(0, "_all");
       sKeys.put(1, "googlePlaceModel");
+      sKeys.put(2, "listener");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
 
     static {
+      sKeys.put("layout/items_0", com.example.popfinder.R.layout.items);
       sKeys.put("layout/place_item_layout_0", com.example.popfinder.R.layout.place_item_layout);
     }
   }

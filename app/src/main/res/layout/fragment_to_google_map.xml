@@ -51,7 +51,7 @@
         android:gravity="center"
         android:text="Long"
         android:textColor="@color/primaryColor"
-        android:textSize="15dp" />
+        android:textSize="0dp" />
 
     <TextView
         android:id="@+id/latolsun"
@@ -68,7 +68,7 @@
         android:gravity="center"
         android:text="lat"
         android:textColor="@color/primaryColor"
-        android:textSize="18dp" />
+        android:textSize="8dp" />
 
     <TextView
         android:id="@+id/infoolsun"
@@ -88,7 +88,7 @@
         android:gravity="left"
         android:text="info"
         android:textColor="@color/quantum_grey900"
-        android:textSize="15dp" />
+        android:textSize="19dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageolsun"

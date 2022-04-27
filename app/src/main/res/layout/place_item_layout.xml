@@ -8,6 +8,11 @@
             name="googlePlaceModel"
             type="com.example.popfinder.GooglePlaceModel" />
 
+        <variable
+            name="listener"
+            type="com.example.popfinder.NearLocationInterface" />
+
+
     </data>
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -66,16 +71,18 @@
 
                     <ImageView
                         android:id="@+id/imgSaveLocation"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_bookmark"
+                        android:onClick="@{()->listener.onDirectionClick(googlePlaceModel)}"
+                        android:src="@drawable/ic_direction"
                         app:tint="@color/primaryColor" />
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_toStartOf="@+id/imgSaveLocation"
+                        android:onClick="@{()->listener.onDirectionClick(googlePlaceModel)}"
                         android:src="@drawable/ic_direction"
                         app:tint="@color/primaryColor" />
                 </RelativeLayout>
@@ -84,7 +91,7 @@
                     android:id="@+id/txtPlaceName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="@{googlePlaceModel.name!=null?googlePlaceModel.name:`No Name`,default=`Place Name`}"
@@ -95,7 +102,7 @@
                     android:id="@+id/txtPlaceAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="4dp"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="@{googlePlaceModel.vicinity!=null?googlePlaceModel.vicinity:`No Address`,default=`Place Address`}"

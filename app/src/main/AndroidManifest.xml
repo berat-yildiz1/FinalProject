@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PopFinder">
 
+        <activity
+            android:name=".DirectionActivity"
+            android:theme="@style/ActionBarTheme" />
         <activity android:name=".ForgetActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />

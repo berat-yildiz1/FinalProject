@@ -177,14 +177,14 @@ public class FileUtils {
         final String relativePath = "/" + pathData[1];
         String fullPath = "";
 
-           if ("primary".equalsIgnoreCase(type)) {
+        if ("primary".equalsIgnoreCase(type)) {
             fullPath = Environment.getExternalStorageDirectory() + relativePath;
             if (fileExists(fullPath)) {
                 return fullPath;
             }
         }
 
-       fullPath = System.getenv("SECONDARY_STORAGE") + relativePath;
+        fullPath = System.getenv("SECONDARY_STORAGE") + relativePath;
         if (fileExists(fullPath)) {
             return fullPath;
         }

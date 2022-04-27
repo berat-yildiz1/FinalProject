@@ -7,6 +7,7 @@ public class AddGuideModel {
     private String location;
     private String name;
     private String phone;
+    private String profile_photo;
 
     public Boolean getActive() {
         return isActive;
@@ -21,10 +22,12 @@ public class AddGuideModel {
     public AddGuideModel() {
     }
 
-    public AddGuideModel(String location, String name, String phone) {
+    public AddGuideModel(String location, String name, String phone,
+                         String profile_photo) {
         this.location = location;
         this.name = name;
         this.phone = phone;
+        this.profile_photo = profile_photo;
     }
 
     public String getLocation() {
@@ -58,5 +61,14 @@ public class AddGuideModel {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+
+    public String getProfilePhoto() {
+        return profile_photo;
+    }
+
+    public void setProfilePhoto(String profile_photo) {
+        this.profile_photo = profile_photo;
     }
 }

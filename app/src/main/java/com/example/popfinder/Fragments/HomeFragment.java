@@ -35,10 +35,12 @@ import androidx.recyclerview.widget.SnapHelper;
 import com.example.popfinder.Adapter.GooglePlaceAdapter;
 import com.example.popfinder.Adapter.TouristicAdapter;
 import com.example.popfinder.Constant.AllConstant;
+import com.example.popfinder.DirectionActivity;
 import com.example.popfinder.GooglePlaceModel;
 import com.example.popfinder.LoginActivity;
 import com.example.popfinder.MainActivity;
 import com.example.popfinder.Model.GoogleResponseModel;
+import com.example.popfinder.NearLocationInterface;
 import com.example.popfinder.Permissions.AppPermissions;
 import com.example.popfinder.PlaceModel;
 import com.example.popfinder.R;
@@ -68,6 +70,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -78,7 +81,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class HomeFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
+public class HomeFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener, NearLocationInterface {
 
     private FragmentHomeBinding binding;
     private GoogleMap mGoogleMap;
@@ -99,6 +102,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
     private LinearLayoutManager linearLayoutManager1;
     private List<TouristicPlaceModelClass>touristicPlaceModelClassList;
     private TouristicAdapter touristicAdapter;
+    private ArrayList<String> userSavedLocationId;
+    private FirebaseAuth firebaseAuth;
 
 
 
@@ -107,6 +112,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                              Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate ( inflater,container,false );
         appPermissions = new AppPermissions ();
+        firebaseAuth = FirebaseAuth.getInstance();
         loadingDialog = new LoadingDialog(requireActivity());
         retrofitAPI = RetrofitClient.getRetrofitClient().create(RetrofitAPI.class);
         googlePlaceModelList = new ArrayList<>();
@@ -158,8 +164,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
         binding.currentLocation.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                Toast.makeText(requireContext(), "Nice TRy Bero", Toast.LENGTH_SHORT).show();
 
+                loadingDialog.startLoading();
                 Fragment newFragment = new SaveScreenFragment ();
 
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
@@ -168,6 +174,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                 transaction.addToBackStack(null);
                 transaction.commit();
 
+                loadingDialog.stopLoading ();
                 ;
                 String longg = String.valueOf ( currentLocation.getLongitude () );
                 String latt = String.valueOf ( currentLocation.getLatitude () );
@@ -196,8 +203,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
             }
         });
 
-        initdata();
-        initRecylerView();
+        //initdata();
+       // initRecylerView();
 
 
 
@@ -298,7 +305,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
         }
         mGoogleMap.setMyLocationEnabled(true);
         mGoogleMap.getUiSettings().setTiltGesturesEnabled(true);
-
+        mGoogleMap.setOnMarkerClickListener(this::onMarkerClick);
 
         setUpLocationUpdate();
     }
@@ -380,6 +387,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                 .icon( BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
 
 
+
         if (currentMarker != null) {
             currentMarker.remove();
         }
@@ -443,6 +451,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
                                     googlePlaceModelList.clear();
                                     mGoogleMap.clear();
                                     for (int i = 0; i < response.body().getGooglePlaceModelList().size(); i++) {
+
 
                                         googlePlaceModelList.add(response.body().getGooglePlaceModelList().get(i));
                                         addMarker(response.body().getGooglePlaceModelList().get ( i ),i);
@@ -518,7 +527,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
 
         binding.placesRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
         binding.placesRecyclerView.setHasFixedSize(false);
-        googlePlaceAdapter = new GooglePlaceAdapter();
+        googlePlaceAdapter = new GooglePlaceAdapter(this);
         binding.placesRecyclerView.setAdapter(googlePlaceAdapter);
 
         SnapHelper snapHelper = new PagerSnapHelper();
@@ -553,6 +562,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
         return false;
     }
 
+
+
     private void addMarker2(int position,double lat, double longs,String name, String info) {
 
         MarkerOptions markerOptions = new MarkerOptions()
@@ -572,9 +583,20 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
     private void initdata() {
 
         touristicPlaceModelClassList= new ArrayList<> ();
-
-        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.cincihamami,"Cinci Hamamı","Cinci Hamamı","41.244869459283265","32.69334272415161" ));
-        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.eskicarsi,"Safranbolu Eski Çarşı","Safranbolu Eski Çarşı","41.244124462650284","32.6932306109375" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.color.white,"SLİDE FOR MORE<h1>","City Beauties","26","45" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.tokatlikanyn,"Tokatlı Kanyonu","City Beauties","41.281361119870596","32.68468522363658" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.universites,"Karabük üniversitesi","City Beauties","41.21101960610326","32.65508578461193" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.tabatkrm,"Çit Dere Tabiat Koruma Alanı","City Beauties","41.032412816867264","32.42415084933803" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.sekerkanyonu,"Şeker Kanyonu","City Beauties","41.19793067885555","32.36684041570342" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.ncekayasukemeri,"İncekaya Su Kemeri","City Beauties","41.28194718498968","32.68411364342046" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.egrvale,"Eğri Ova Göleti","City Beauties","41.085759064088876","32.428183295815536" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.hidirliktepesisafranbolu,"Seyir Terası","City Beauties","41.2437049725583","32.69529054735885" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.safranboluevler,"Safranbolu Evleri","City Beauties","41.24615733802645","32.6932306109375" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.kaymakamlarev,"Kaymakamlar Gezi Evi","City Beauties","41.24314027010512","32.69417474846395" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.kentmuzesi,"Kent Tarih Müzesi","City Beauties","41.245479719928056","32.69039819835814" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.kristalteras,"Kristal Teras","City Beauties","41.27965438536286","32.68251944016966" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.cincihamami,"Cinci Hamamı","City Beauties","41.244869459283265","32.69334272415161" ));
+        touristicPlaceModelClassList.add (new TouristicPlaceModelClass ( R.drawable.eskicarsi,"Safranbolu Eski Çarşı","City Beauties","41.244124462650284","32.6932306109375" ));
 
     }
     private void initRecylerView() {
@@ -582,6 +604,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
         recyclerView = binding.placesRecyclerView2;
         linearLayoutManager1 = new LinearLayoutManager (requireContext ());
         linearLayoutManager1.setOrientation ( RecyclerView.HORIZONTAL );
+        binding.placesRecyclerView2.setHasFixedSize ( true );
         recyclerView.setLayoutManager ( linearLayoutManager1 );
         touristicAdapter = new TouristicAdapter ( touristicPlaceModelClassList );
         recyclerView.setAdapter ( touristicAdapter );
@@ -592,22 +615,42 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled ( recyclerView, dx, dy );
                 LinearLayoutManager linearLayoutManager2 = (LinearLayoutManager) recyclerView.getLayoutManager ();
-                int position = linearLayoutManager2.findFirstCompletelyVisibleItemPosition();
+                int position = linearLayoutManager2.findFirstVisibleItemPosition ();
+                System.out.println ("positionumuz"+position);
                 if(position>0){
                     TouristicPlaceModelClass touristicPlaceModelClass = touristicPlaceModelClassList.get ( position );
                     double lnttut1 = Double.valueOf ( touristicPlaceModelClass.getLats () );
                     double longtut = Double.valueOf ( touristicPlaceModelClass.getLongs () );
-                    System.out.println ("lnt:"+lnttut1+"long"+longtut);
                     String nametut = touristicPlaceModelClass.getTextview1 ();
                     String infotut = touristicPlaceModelClass.getTextview2 ();
                     mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lnttut1,
                             longtut), 50));
                     addMarker2 ( position,lnttut1,longtut,nametut,infotut );
 
-
                 }
             }
         } );
+    }
+
+    @Override
+    public void onSaveClick(GooglePlaceModel googlePlaceModel) {
+
+    }
+
+    @Override
+    public void onDirectionClick(GooglePlaceModel googlePlaceModel) {
+
+        String placeId = googlePlaceModel.getPlaceId();
+        Double lat = googlePlaceModel.getGeometry().getLocation().getLat();
+        Double lng = googlePlaceModel.getGeometry().getLocation().getLng();
+
+        Intent intent = new Intent(requireContext(), DirectionActivity.class);
+        intent.putExtra("placeId", placeId);
+        intent.putExtra("lat", lat);
+        intent.putExtra("lng", lng);
+
+        startActivity(intent);
+
     }
 
 

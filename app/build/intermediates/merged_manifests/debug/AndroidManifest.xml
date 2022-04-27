@@ -44,6 +44,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.PopFinder" >
+        <activity
+            android:name="com.example.popfinder.DirectionActivity"
+            android:theme="@style/ActionBarTheme" />
         <activity android:name="com.example.popfinder.ForgetActivity" />
         <activity android:name="com.example.popfinder.SignUpActivity" />
         <activity android:name="com.example.popfinder.LoginActivity" />

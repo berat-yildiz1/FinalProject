@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.florent37:shapeofview:1.4.7@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/11c63ae033956e89e7b53378f8df07ac/transformed/jetified-shapeofview-1.4.7/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3c4f33e236aa7cfc647c75e260ced868/transformed/jetified-shapeofview-1.4.7/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/11c63ae033956e89e7b53378f8df07ac/transformed/jetified-shapeofview-1.4.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/11c63ae033956e89e7b53378f8df07ac/transformed/jetified-shapeofview-1.4.7/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/11c63ae033956e89e7b53378f8df07ac/transformed/jetified-shapeofview-1.4.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3c4f33e236aa7cfc647c75e260ced868/transformed/jetified-shapeofview-1.4.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c4f33e236aa7cfc647c75e260ced868/transformed/jetified-shapeofview-1.4.7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c4f33e236aa7cfc647c75e260ced868/transformed/jetified-shapeofview-1.4.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

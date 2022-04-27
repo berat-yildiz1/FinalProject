@@ -24,8 +24,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.popfinder.Constant.AllConstant;
+import com.example.popfinder.LoginActivity;
 import com.example.popfinder.Permissions.AppPermissions;
 import com.example.popfinder.R;
+import com.example.popfinder.SignUpActivity;
 import com.example.popfinder.Utility.LoadingDialog;
 import com.example.popfinder.databinding.FragmentSettingsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -39,6 +41,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.google.rpc.context.AttributeContext;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
@@ -79,7 +82,150 @@ public class SettingsFragment extends Fragment {
             usernameDialog();
         });
 
+        binding.emailChance.setOnClickListener(mail ->{
+            goMailChance();
+
+        });
+
+        binding.changePassword.setOnClickListener(pass ->{
+            goPasswordChange();
+        });
+        binding.cardLogout.setOnClickListener(logout ->{
+            logout();
+        });
         return binding.getRoot();
+    }
+
+    private void logout() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        View view = LayoutInflater.from(requireContext()).inflate(R.layout.log_out_dialog, null, false);
+        builder.setView(view);
+
+
+        builder.setTitle("Logout!");
+
+        builder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                firebaseAuth.signOut();
+
+                startActivity(new Intent(getActivity(), LoginActivity.class));
+                getActivity().finish();
+
+
+            }
+        })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .create().show();
+    }
+
+    private void goPasswordChange() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        View view = LayoutInflater.from(requireContext()).inflate(R.layout.change_password_dialog, null, false);
+        builder.setView(view);
+        TextInputEditText edtChangePassword = view.findViewById(R.id.edtDialogChangePassword);
+
+        builder.setTitle("Edit Password");
+
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String changePassword = edtChangePassword.getText().toString().trim();
+                if (!changePassword.isEmpty()) {
+                    firebaseAuth.getCurrentUser().updatePassword(changePassword)
+                            .addOnCompleteListener (new OnCompleteListener <Void> () {
+                                @Override
+                                public void onComplete (@NonNull Task <Void> task) {
+                                    if (task.isSuccessful ()) {
+
+                                        Toast.makeText(getActivity(),"Password  has been changed!",Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Exception e = task.getException();
+                                        Toast.makeText (getActivity(), "Error updating password: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                                        Log.w("updateEmail", "Unable to update password", e);
+                                    }
+                                    dialog.dismiss ();
+                                }
+                            });
+
+                } else {
+                    Toast.makeText(getContext(), "Email is required", Toast.LENGTH_SHORT).show();
+                }
+            }
+        })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .create().show();
+
+    }
+
+    private void goMailChance() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        View view = LayoutInflater.from(requireContext()).inflate(R.layout.change_email_dialog, null, false);
+        builder.setView(view);
+        TextInputEditText edtChangeMail = view.findViewById(R.id.edtDialogChangeMail);
+
+        builder.setTitle("Edit E-mail");
+
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String changeMail = edtChangeMail.getText().toString().trim();
+                if (!changeMail.isEmpty()) {
+
+                    firebaseAuth.getCurrentUser().updateEmail(changeMail)
+                            .addOnCompleteListener (new OnCompleteListener <Void> () {
+                                @Override
+                                public void onComplete (@NonNull Task <Void> task) {
+                                    if (task.isSuccessful ()) {
+
+                                        firebaseAuth.getCurrentUser()
+                                                .sendEmailVerification()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> email) {
+                                                        if (email.isSuccessful()) {
+
+                                                            Toast.makeText(getActivity(), "Please verify email", Toast.LENGTH_SHORT).show();
+                                                        } else {
+
+                                                            Toast.makeText(getActivity(), "Error : " + email.getException(), Toast.LENGTH_SHORT).show();
+                                                        }
+                                                    }
+                                                });
+                                        Toast.makeText(getActivity(),"Mail  has been changed!",Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Exception e = task.getException();
+                                        Toast.makeText (getActivity(), "Error updating email: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                                        Log.w("updateEmail", "Unable to update email", e);
+                                    }
+                                    dialog.dismiss ();
+                                }
+                            });
+
+                } else {
+                    Toast.makeText(getContext(), "Email is required", Toast.LENGTH_SHORT).show();
+                }
+            }
+        })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .create().show();
+
+
     }
 
     private void pickImage() {
@@ -93,7 +239,7 @@ public class SettingsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Settings");
+        // ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Ayarlar");
         binding.txtEmail.setText(firebaseAuth.getCurrentUser().getEmail());
         binding.txtUsername.setText(firebaseAuth.getCurrentUser().getDisplayName());
 
@@ -253,4 +399,6 @@ public class SettingsFragment extends Fragment {
                 })
                 .create().show();
     }
+
+
 }

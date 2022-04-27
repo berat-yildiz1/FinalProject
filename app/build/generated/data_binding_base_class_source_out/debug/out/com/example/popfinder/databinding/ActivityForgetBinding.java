@@ -4,6 +4,7 @@ package com.example.popfinder.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
@@ -26,11 +27,15 @@ public final class ActivityForgetBinding implements ViewBinding {
   @NonNull
   public final MaterialButton btnForgetPassword;
 
+  @NonNull
+  public final EditText newEmail;
+
   private ActivityForgetBinding(@NonNull RelativeLayout rootView, @NonNull ImageView btnBack,
-      @NonNull MaterialButton btnForgetPassword) {
+      @NonNull MaterialButton btnForgetPassword, @NonNull EditText newEmail) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnForgetPassword = btnForgetPassword;
+    this.newEmail = newEmail;
   }
 
   @Override
@@ -72,7 +77,14 @@ public final class ActivityForgetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityForgetBinding((RelativeLayout) rootView, btnBack, btnForgetPassword);
+      id = R.id.newEmail;
+      EditText newEmail = ViewBindings.findChildViewById(rootView, id);
+      if (newEmail == null) {
+        break missingId;
+      }
+
+      return new ActivityForgetBinding((RelativeLayout) rootView, btnBack, btnForgetPassword,
+          newEmail);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

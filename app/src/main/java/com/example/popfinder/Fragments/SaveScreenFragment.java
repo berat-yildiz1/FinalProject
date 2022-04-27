@@ -39,6 +39,7 @@ import com.example.popfinder.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -75,6 +76,7 @@ public class SaveScreenFragment extends Fragment {
     String encodeImage;
     String longdata;
     String latdata;
+    private Uri imageUri;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -96,7 +98,8 @@ public class SaveScreenFragment extends Fragment {
        btnSavethisplaces=v.findViewById ( R.id.btnSavethisplaces );
         imgthisplace=v.findViewById ( R.id.imgthisplace );
         appPermissions = new AppPermissions();
-
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        String kullanıci = firebaseAuth.getCurrentUser().getEmail ();
 
         getParentFragmentManager ().setFragmentResultListener ( "dataForm1", this, new FragmentResultListener () {
             @Override
@@ -148,6 +151,8 @@ public class SaveScreenFragment extends Fragment {
                 places.setPlcimage (encodeImage);
                 places.setPlclong (longdata);
                 places.setPlcLatit ( latdata );
+                places.setKullanici ( kullanıci );
+
 
 
                 databaseReference=firebaseDatabase.getReference ("Placesinfo").child ( edplcname.getText ().toString () );
@@ -163,6 +168,8 @@ public class SaveScreenFragment extends Fragment {
                     }
 
                 } );
+
+
                     Toast.makeText(requireContext(), "Successful ", Toast.LENGTH_SHORT).show();
                     Fragment newFragment = new HomeFragment ();
 
@@ -212,13 +219,17 @@ public class SaveScreenFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult ( requestCode, resultCode, data );
-        CropImage.ActivityResult result = CropImage.getActivityResult ( data );
-        if(resultCode == RESULT_OK){
-            Uri resulturi =result.getUri ();
-            String path = FileUtils.getPath ( getContext (),resulturi );
-            compressImage(path);
-
-
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+            if (resultCode == RESULT_OK) {
+                imageUri = result.getUri();
+                Glide.with(this).load(imageUri).into(imgthisplace);
+            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                Exception exception = result.getError();
+                Log.d("TAG", "onActivityResult: " + exception);
+            }
+            String path = imageUri.getPath ();
+            compressImage ( path );
         }
     }
 

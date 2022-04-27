@@ -15,6 +15,7 @@ import com.example.popfinder.Fragments.HomeFragment;
 import com.example.popfinder.Fragments.SaveScreenFragment;
 import com.example.popfinder.Fragments.SettingsFragment;
 import com.example.popfinder.Fragments.ToGoogleMap;
+import com.example.popfinder.Fragments.WebPageFragment;
 import com.example.popfinder.R;
 import com.example.popfinder.TouristicPlaceModelClass;
 
@@ -52,8 +53,8 @@ public class TouristicAdapter extends RecyclerView.Adapter<TouristicAdapter.View
             public void onClick(View view) {
                     //google link ayarla
                 AppCompatActivity activity = (AppCompatActivity)view.getContext ();
-                ToGoogleMap toGoogleMap = new ToGoogleMap ();
-                activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.homeMap,toGoogleMap ).addToBackStack ( null ).commit ();
+                WebPageFragment toGoogleMap = new WebPageFragment ();
+                activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.fragmentContainer,toGoogleMap ).addToBackStack ( null ).commit ();
 
             }
         } );

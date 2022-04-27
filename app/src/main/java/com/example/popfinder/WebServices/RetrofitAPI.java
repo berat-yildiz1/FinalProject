@@ -1,5 +1,6 @@
 package com.example.popfinder.WebServices;
 
+import com.example.popfinder.Model.DirectionPlaceModel.DirectionResponseModel;
 import com.example.popfinder.Model.GoogleResponseModel;
 
 import retrofit2.Call;
@@ -11,5 +12,8 @@ public interface RetrofitAPI {
 
     @GET
     Call<GoogleResponseModel> getNearByPlaces(@Url String url);
+
+    @GET
+    Call<DirectionResponseModel> getDirection(@Url String url);
 
 }

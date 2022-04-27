@@ -1,15 +1,17 @@
 package com.example.popfinder.Adapter;
 
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.popfinder.MainActivity;
 import com.example.popfinder.Model.AddGuideModel;
 import com.example.popfinder.R;
 
@@ -36,7 +38,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate( R.layout.row_guide, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_guide, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -45,6 +47,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder
         holder.name.setText(list.get(position).getName());
         holder.phone.setText(list.get(position).getPhone());
         holder.location.setText(list.get(position).getLocation());
+        Glide.with(context).load(list.get(position).getProfilePhoto()).into(holder.profile_photo);
     }
 
     @Override
@@ -54,12 +57,14 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.MyViewHolder
 
     class MyViewHolder extends RecyclerView.ViewHolder{
         TextView name, phone, location;
+        ImageView profile_photo;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById( R.id.guide_name);
-            phone = itemView.findViewById( R.id.guide_phone);
-            location = itemView.findViewById( R.id.guide_location);
+            name = itemView.findViewById(R.id.guide_name);
+            phone = itemView.findViewById(R.id.guide_phone);
+            location = itemView.findViewById(R.id.guide_location);
+            profile_photo = itemView.findViewById(R.id.img_pp);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -1,30 +1,9 @@
 package com.example.popfinder.Fragments;
 
-import android.annotation.SuppressLint;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.popfinder.Adapter.GuideAdapter;
 import com.example.popfinder.Model.AddGuideModel;
 import com.example.popfinder.R;
 import com.example.popfinder.databinding.FragmentShowGuideBinding;
-import com.github.nikartm.button.FitButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -33,6 +12,32 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+
+import com.github.nikartm.button.FitButton;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +69,7 @@ public class ShowGuide extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentShowGuideBinding.inflate(inflater, container, false);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Turist Rehberi Görüntüle");
+        //((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Turist Rehberi Görüntüle");
 
         recyclerView = binding.recyclerView;
         btnAdd = binding.btnAdd;
@@ -92,7 +97,7 @@ public class ShowGuide extends Fragment {
                                 fragment.setArguments(args);
                                 FragmentManager fragmentManager=getFragmentManager();
                                 FragmentTransaction transaction=fragmentManager.beginTransaction();
-                                transaction.replace( R.id.fragmentContainer,fragment);
+                                transaction.replace(R.id.fragmentContainer,fragment);
                                 transaction.commit();
                                 break;
                             case 1:
@@ -105,8 +110,10 @@ public class ShowGuide extends Fragment {
             }
         });
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false);
-        RecyclerView.ItemDecoration decoration = new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireContext(),
+                LinearLayoutManager.VERTICAL, false);
+        RecyclerView.ItemDecoration decoration = new DividerItemDecoration(requireContext(),
+                DividerItemDecoration.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(decoration);
         recyclerView.setAdapter(guideAdapter);
@@ -115,7 +122,7 @@ public class ShowGuide extends Fragment {
             AddGuideFragment fragment = new AddGuideFragment();
             FragmentManager fragmentManager=getFragmentManager();
             FragmentTransaction transaction=fragmentManager.beginTransaction();
-            transaction.replace( R.id.fragmentContainer,fragment);
+            transaction.replace(R.id.fragmentContainer,fragment);
             transaction.commit();
         });
 
@@ -140,7 +147,12 @@ public class ShowGuide extends Fragment {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 if (document.getBoolean("isActive")){
-                                    AddGuideModel guide = new AddGuideModel(document.getString("location"), document.getString("name"), document.getString("phone"));
+                                    AddGuideModel guide = new AddGuideModel(
+                                            document.getString("location"),
+                                            document.getString("name"),
+                                            document.getString("phone"),
+                                            document.getString("profile_photo"));
+
                                     guide.setId(document.getId());
                                     list.add(guide);
                                 }

@@ -36,7 +36,7 @@
                         android:id="@+id/imgProfile"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:src="@drawable/beratkeke"
+                        android:src="@drawable/ic_camera"
 
                         />
 
@@ -58,7 +58,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:drawablePadding="10dp"
-                    android:text="Berat Yıldız"
+                    android:text="Your name"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -93,12 +93,13 @@
                     app:cardElevation="6dp">
 
                     <RelativeLayout
+                        android:id="@+id/emailChance"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/email"
+                            android:id="@+id/phone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="10dp"
@@ -112,7 +113,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/email"
+                            android:layout_below="@+id/phone"
                             android:layout_marginStart="36dp"
                             android:layout_marginTop="15dp"
                             android:layout_marginEnd="10dp"
@@ -124,7 +125,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.5"
-                                android:text="brtyldzq@gmail.com"
+                                android:text="iremuguztemur@gmail.com"
                                 android:textColor="@color/itemTextColor"
                                 android:textSize="15dp"
                                 android:textStyle="bold" />
@@ -159,6 +160,7 @@
                     app:cardElevation="6dp">
 
                     <RelativeLayout
+                        android:id="@+id/changePassword"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:paddingStart="10dp"
@@ -214,7 +216,7 @@
                             android:textColor="@color/itemTextColor"
                             android:textSize="20dp"
                             android:textStyle="bold"
-                            app:drawableStartCompat="@drawable/ic_logout"
+                            app:drawableStartCompat="@drawable/ic_baseline_login_24"
                             app:drawableTint="@color/primaryColor" />
 
 

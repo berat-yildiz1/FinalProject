@@ -13,6 +13,7 @@ import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.popfinder.GooglePlaceModel;
+import com.example.popfinder.NearLocationInterface;
 import com.example.popfinder.R;
 import com.google.android.material.textview.MaterialTextView;
 import java.lang.Deprecated;
@@ -37,6 +38,9 @@ public abstract class PlaceItemLayoutBinding extends ViewDataBinding {
   @Bindable
   protected GooglePlaceModel mGooglePlaceModel;
 
+  @Bindable
+  protected NearLocationInterface mListener;
+
   protected PlaceItemLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView imgSaveLocation, RelativeLayout rating, TextView txtPlaceAddress,
       MaterialTextView txtPlaceDRating, TextView txtPlaceName) {
@@ -53,6 +57,13 @@ public abstract class PlaceItemLayoutBinding extends ViewDataBinding {
   @Nullable
   public GooglePlaceModel getGooglePlaceModel() {
     return mGooglePlaceModel;
+  }
+
+  public abstract void setListener(@Nullable NearLocationInterface listener);
+
+  @Nullable
+  public NearLocationInterface getListener() {
+    return mListener;
   }
 
   @NonNull

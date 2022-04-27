@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.popfinder.GooglePlaceModel;
+import com.example.popfinder.NearLocationInterface;
 import com.example.popfinder.R;
 import com.example.popfinder.databinding.PlaceItemLayoutBinding;
 
@@ -16,6 +17,12 @@ import java.util.List;
 public class GooglePlaceAdapter extends RecyclerView.Adapter<GooglePlaceAdapter.ViewHolder> {
 
     private List<GooglePlaceModel> googlePlaceModels;
+    private NearLocationInterface nearLocationInterface;
+
+    public GooglePlaceAdapter(NearLocationInterface nearLocationInterface) {
+        this.nearLocationInterface = nearLocationInterface;
+    }
+
 
     @NonNull
     @Override
@@ -31,6 +38,7 @@ public class GooglePlaceAdapter extends RecyclerView.Adapter<GooglePlaceAdapter.
         if (googlePlaceModels != null) {
             GooglePlaceModel placeModel = googlePlaceModels.get(position);
             holder.binding.setGooglePlaceModel(placeModel);
+            holder.binding.setListener(nearLocationInterface);
 
         }
 
