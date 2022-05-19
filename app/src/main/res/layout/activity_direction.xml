@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/directionlayoutt"
     app:layout_behavior="@string/bottom_sheet_behavior"
     tools:context="DirectionActivity">
 
@@ -74,7 +75,7 @@
                     android:layout_marginTop="10dp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="asdgahsyd"
+                    android:text="From"
                     android:textColor="@color/quantum_black_text"
                     android:textStyle="bold" />
 
@@ -117,7 +118,7 @@
                     android:layout_marginTop="10dp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="asdgahsyd"
+                    android:text="To"
                     android:textColor="@color/quantum_black_text"
                     android:textStyle="bold" />
 

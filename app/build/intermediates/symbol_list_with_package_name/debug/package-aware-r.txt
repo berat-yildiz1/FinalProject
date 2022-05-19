@@ -2461,6 +2461,7 @@ drawable ic_shopping_cart
 drawable ic_thumb_up
 drawable ic_traffic
 drawable iremkeke
+drawable it
 drawable kaymakamlarev
 drawable kentmuzesi
 drawable kristalteras
@@ -2626,6 +2627,7 @@ id ball_three
 id ball_two
 id barrier
 id baseline
+id baslikgiris
 id beginOnFirstDraw
 id beginning
 id bestChoice
@@ -2656,6 +2658,7 @@ id btnGuide
 id btnHelp
 id btnHome
 id btnInstagram
+id btnLanguages
 id btnLogin
 id btnMapType
 id btnNormal
@@ -2751,6 +2754,7 @@ id dialog_button
 id dimensions
 id direct
 id directionMap
+id directionlayoutt
 id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
@@ -2820,6 +2824,8 @@ id guide_location
 id guide_name
 id guide_phone
 id guideline
+id havalıkorna
+id havalıkornarelative
 id header
 id header_title
 id hideable
@@ -3438,8 +3444,22 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation drawer_nav_graph
 plurals mtrl_badge_content_description
+raw krn
 raw places_keep
 string API_KEY
+string About
+string AddGuide
+string Delete
+string Edit
+string Guide
+string Help
+string Home
+string Satalite1
+string Satellite2
+string Satellite3
+string SavedPlaces
+string SearchGuide
+string Setting
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3509,7 +3529,9 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string forgetpass
 string gcm_defaultSenderId
+string girisad
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -3518,6 +3540,8 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string language
+string login
 string login_string
 string material_clock_display_divider
 string material_clock_toggle_content_description
@@ -3577,6 +3601,7 @@ string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string open_navigation_drawer
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3592,7 +3617,9 @@ string places_powered_by_google
 string places_search_error
 string places_try_again
 string project_id
+string search_Place
 string search_menu_title
+string singup
 string status_bar_notification_info_overflow
 style ActionBarTheme
 style AlertDialog_AppCompat

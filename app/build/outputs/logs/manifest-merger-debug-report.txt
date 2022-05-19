@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\SAHIN\.gradle\caches\transforms-3\99fd84f3e1875f4d78642c3a8ae3a98a\transformed\jetified-android-image-cropper-2.8.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\SAHIN\.gradle\caches\transforms-3\d7c52a80c45f2b4ac470d7a52f5e6f03\transformed\databinding-adapters-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\SAHIN\.gradle\caches\transforms-3\142df37a6b41b923bfb44edb8b622809\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:17:1-22:12
@@ -111,20 +111,20 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\SAHIN\.
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\SAHIN\.gradle\caches\transforms-3\fb5492b3e1bec389c981b4fe5ed76a6e\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\SAHIN\.gradle\caches\transforms-3\88b767e4234edf1561dd262ad3954b80\transformed\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\SAHIN\.gradle\caches\transforms-3\cd1ba9eb47f39f0dfe177089e5e178ec\transformed\jetified-rxandroid-2.0.1\AndroidManifest.xml:15:1-21:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-52:12
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:2:11-69
@@ -183,7 +183,7 @@ ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:10:22-82
 application
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:12:5-50:19
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:12:5-51:19
 MERGED from [com.google.firebase:firebase-firestore:24.1.0] C:\Users\SAHIN\.gradle\caches\transforms-3\ed0ad85f53fed9b3b60b7ad071ec5eaf\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.1.0] C:\Users\SAHIN\.gradle\caches\transforms-3\ed0ad85f53fed9b3b60b7ad071ec5eaf\transformed\jetified-firebase-firestore-24.1.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\SAHIN\.gradle\caches\transforms-3\c0d575160d613088d5af3f6a5e1b6590\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
@@ -274,78 +274,80 @@ MERGED from [com.victor:lib:1.0.4] C:\Users\SAHIN\.gradle\caches\transforms-3\03
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:17:9-61
+	android:configChanges
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:19:9-39
 	android:icon
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:14:9-56
 	android:allowBackup
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:19:9-47
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:20:9-47
 activity#com.example.popfinder.DirectionActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:21:9-23:53
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:22:9-24:53
 	android:theme
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:23:13-50
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:24:13-50
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:22:13-46
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:23:13-46
 activity#com.example.popfinder.ForgetActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:24:9-52
-	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:24:19-49
-activity#com.example.popfinder.SignUpActivity
 ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:25:9-52
 	android:name
 		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:25:19-49
+activity#com.example.popfinder.SignUpActivity
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:26:9-52
+	android:name
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:26:19-49
 activity#com.example.popfinder.LoginActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:26:9-51
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:27:9-51
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:26:19-48
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:27:19-48
 activity#com.example.popfinder.MainActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:27:9-50
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:28:9-50
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:28:19-47
 activity#com.example.popfinder.SplashActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:exported
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:29:13-43
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:30:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:35:27-74
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:37:9-39:59
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:38:9-40:59
 	android:theme
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:38:13-76
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:39:13-76
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:41:9-43:69
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:42:9-44:69
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\SAHIN\.gradle\caches\transforms-3\a700a47d808d693a0a1ca4f9f7912e4f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\SAHIN\.gradle\caches\transforms-3\a700a47d808d693a0a1ca4f9f7912e4f\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.maps.android:android-maps-utils:2.3.0] C:\Users\SAHIN\.gradle\caches\transforms-3\49bb3dfb8bda410dad5f483a0f4e2bb2\transformed\jetified-android-maps-utils-2.3.0\AndroidManifest.xml:10:9-12:69
 MERGED from [com.google.maps.android:android-maps-utils:2.3.0] C:\Users\SAHIN\.gradle\caches\transforms-3\49bb3dfb8bda410dad5f483a0f4e2bb2\transformed\jetified-android-maps-utils-2.3.0\AndroidManifest.xml:10:9-12:69
 	android:value
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:43:13-66
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:44:13-66
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:42:13-58
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:43:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:44:9-46:47
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:45:9-47:47
 	android:value
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:46:13-44
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:47:13-44
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:45:13-58
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:46:13-58
 meta-data#preloaded_fonts
-ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:47:9-49:57
+ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:48:9-50:57
 	android:resource
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:49:13-54
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:50:13-54
 	android:name
-		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:48:13-43
+		ADDED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml:49:13-43
 uses-sdk
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\SAHIN\AndroidStudioProjects\PopFinder\app\src\main\AndroidManifest.xml

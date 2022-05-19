@@ -1,23 +1,7 @@
 com/example/popfinder/databinding/FragmentSavedPlacesBinding.java
  com.example.popfinder.databinding.FragmentSavedPlacesBinding
-com/example/popfinder/Fragments/SettingsFragment.java
- com.example.popfinder.Fragments.SettingsFragment
- com.example.popfinder.Fragments.SettingsFragment$1
- com.example.popfinder.Fragments.SettingsFragment$10
- com.example.popfinder.Fragments.SettingsFragment$10$1
- com.example.popfinder.Fragments.SettingsFragment$2
- com.example.popfinder.Fragments.SettingsFragment$3
- com.example.popfinder.Fragments.SettingsFragment$4
- com.example.popfinder.Fragments.SettingsFragment$4$1
- com.example.popfinder.Fragments.SettingsFragment$5
- com.example.popfinder.Fragments.SettingsFragment$6
- com.example.popfinder.Fragments.SettingsFragment$6$1
- com.example.popfinder.Fragments.SettingsFragment$6$1$1
- com.example.popfinder.Fragments.SettingsFragment$7
- com.example.popfinder.Fragments.SettingsFragment$8
- com.example.popfinder.Fragments.SettingsFragment$8$1
- com.example.popfinder.Fragments.SettingsFragment$8$1$1
- com.example.popfinder.Fragments.SettingsFragment$9
+com/example/popfinder/databinding/FragmentPasswordChangeBinding.java
+ com.example.popfinder.databinding.FragmentPasswordChangeBinding
 com/example/popfinder/Adapter/HelpAdapter.java
  com.example.popfinder.Adapter.HelpAdapter
  com.example.popfinder.Adapter.HelpAdapter$Dialog
@@ -104,6 +88,8 @@ com/example/popfinder/Model/DirectionPlaceModel/DirectionResponseModel.java
  com.example.popfinder.Model.DirectionPlaceModel.DirectionResponseModel
 com/example/popfinder/NearLocationInterface.java
  com.example.popfinder.NearLocationInterface
+com/example/popfinder/Constant/LanguageConfig.java
+ com.example.popfinder.Constant.LanguageConfig
 com/example/popfinder/Model/LocationModel.java
  com.example.popfinder.Model.LocationModel
 com/example/popfinder/Fragments/EmailChangeFragment.java
@@ -159,10 +145,10 @@ com/example/popfinder/Model/AddHelpModel.java
  com.example.popfinder.Model.AddHelpModel
 com/example/popfinder/databinding/DialogLayoutBinding.java
  com.example.popfinder.databinding.DialogLayoutBinding
-com/example/popfinder/databinding/ActivityMainBinding.java
- com.example.popfinder.databinding.ActivityMainBinding
 com/example/popfinder/databinding/ActivityDirectionBinding.java
  com.example.popfinder.databinding.ActivityDirectionBinding
+com/example/popfinder/databinding/ActivityMainBinding.java
+ com.example.popfinder.databinding.ActivityMainBinding
 com/example/popfinder/databinding/ItemsBinding.java
  com.example.popfinder.databinding.ItemsBinding
 com/example/popfinder/databinding/FragmentAboutBinding.java
@@ -200,6 +186,8 @@ com/example/popfinder/Fragments/SavedPlacesFragment.java
  com.example.popfinder.Fragments.SavedPlacesFragment$MyAdapter$7
  com.example.popfinder.Fragments.SavedPlacesFragment$MyAdapter$7$1
  com.example.popfinder.Fragments.SavedPlacesFragment$MyAdapter$8
+com/example/popfinder/Constant/LocaleHelper.java
+ com.example.popfinder.Constant.LocaleHelper
 com/example/popfinder/WebServices/RetrofitClient.java
  com.example.popfinder.WebServices.RetrofitClient
 com/example/popfinder/Model/DirectionPlaceModel/EndLocationModel.java
@@ -250,6 +238,11 @@ com/example/popfinder/LoginActivity.java
  com.example.popfinder.LoginActivity
  com.example.popfinder.LoginActivity$1
  com.example.popfinder.LoginActivity$1$1
+ com.example.popfinder.LoginActivity$1$2
+ com.example.popfinder.LoginActivity$2
+ com.example.popfinder.LoginActivity$2$1
+com/example/popfinder/Constant/LanguageFlagClass.java
+ com.example.popfinder.Constant.LanguageFlagClass
 com/example/popfinder/Adapter/TouristicAdapter.java
  com.example.popfinder.Adapter.TouristicAdapter
  com.example.popfinder.Adapter.TouristicAdapter$1
@@ -277,5 +270,21 @@ com/example/popfinder/databinding/PopupViewBinding.java
  com.example.popfinder.databinding.PopupViewBinding
 com/example/popfinder/TouristicPlaceModelClass.java
  com.example.popfinder.TouristicPlaceModelClass
-com/example/popfinder/databinding/FragmentPasswordChangeBinding.java
- com.example.popfinder.databinding.FragmentPasswordChangeBinding
+com/example/popfinder/Fragments/SettingsFragment.java
+ com.example.popfinder.Fragments.SettingsFragment
+ com.example.popfinder.Fragments.SettingsFragment$1
+ com.example.popfinder.Fragments.SettingsFragment$10
+ com.example.popfinder.Fragments.SettingsFragment$10$1
+ com.example.popfinder.Fragments.SettingsFragment$2
+ com.example.popfinder.Fragments.SettingsFragment$3
+ com.example.popfinder.Fragments.SettingsFragment$4
+ com.example.popfinder.Fragments.SettingsFragment$4$1
+ com.example.popfinder.Fragments.SettingsFragment$5
+ com.example.popfinder.Fragments.SettingsFragment$6
+ com.example.popfinder.Fragments.SettingsFragment$6$1
+ com.example.popfinder.Fragments.SettingsFragment$6$1$1
+ com.example.popfinder.Fragments.SettingsFragment$7
+ com.example.popfinder.Fragments.SettingsFragment$8
+ com.example.popfinder.Fragments.SettingsFragment$8$1
+ com.example.popfinder.Fragments.SettingsFragment$8$1$1
+ com.example.popfinder.Fragments.SettingsFragment$9

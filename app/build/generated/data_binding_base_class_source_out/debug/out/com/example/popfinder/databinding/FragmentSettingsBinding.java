@@ -39,6 +39,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final RelativeLayout emailChance;
 
   @NonNull
+  public final CardView havalKorna;
+
+  @NonNull
+  public final RelativeLayout havalKornarelative;
+
+  @NonNull
   public final ImageView imgCamera;
 
   @NonNull
@@ -59,6 +65,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
   private FragmentSettingsBinding(@NonNull LinearLayout rootView, @NonNull CardView cardEmail,
       @NonNull CardView cardLogout, @NonNull CardView cardPassword,
       @NonNull RelativeLayout changePassword, @NonNull RelativeLayout emailChance,
+      @NonNull CardView havalKorna, @NonNull RelativeLayout havalKornarelative,
       @NonNull ImageView imgCamera, @NonNull CircleImageView imgProfile, @NonNull TextView phone,
       @NonNull TextView txtEEmail, @NonNull TextView txtEmail, @NonNull TextView txtUsername) {
     this.rootView = rootView;
@@ -67,6 +74,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
     this.cardPassword = cardPassword;
     this.changePassword = changePassword;
     this.emailChance = emailChance;
+    this.havalKorna = havalKorna;
+    this.havalKornarelative = havalKornarelative;
     this.imgCamera = imgCamera;
     this.imgProfile = imgProfile;
     this.phone = phone;
@@ -132,6 +141,18 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.havalıkorna;
+      CardView havalKorna = ViewBindings.findChildViewById(rootView, id);
+      if (havalKorna == null) {
+        break missingId;
+      }
+
+      id = R.id.havalıkornarelative;
+      RelativeLayout havalKornarelative = ViewBindings.findChildViewById(rootView, id);
+      if (havalKornarelative == null) {
+        break missingId;
+      }
+
       id = R.id.imgCamera;
       ImageView imgCamera = ViewBindings.findChildViewById(rootView, id);
       if (imgCamera == null) {
@@ -169,8 +190,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
       }
 
       return new FragmentSettingsBinding((LinearLayout) rootView, cardEmail, cardLogout,
-          cardPassword, changePassword, emailChance, imgCamera, imgProfile, phone, txtEEmail,
-          txtEmail, txtUsername);
+          cardPassword, changePassword, emailChance, havalKorna, havalKornarelative, imgCamera,
+          imgProfile, phone, txtEEmail, txtEmail, txtUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

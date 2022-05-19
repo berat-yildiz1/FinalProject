@@ -80,6 +80,10 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\popup_view.xml"
     },
     {
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_email_change.xml",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_email_change.xml"
+    },
+    {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_to_google_map.xml",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_to_google_map.xml"
     },
@@ -92,16 +96,12 @@
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\add_guide_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_email_change.xml",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_email_change.xml"
+        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_saved_places.xml",
+        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_saved_places.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_saved_places.xml",
-        "source": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\src\\main\\res\\layout\\fragment_saved_places.xml"
     },
     {
         "merged": "C:\\Users\\SAHIN\\AndroidStudioProjects\\PopFinder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",

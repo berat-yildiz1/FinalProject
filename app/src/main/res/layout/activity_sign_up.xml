@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Safranbolu City Guide"
+                android:text="@string/girisad"
                 android:textColor="@color/white"
                 android:textSize="40dp"
                 android:textStyle="bold" />
@@ -72,7 +72,7 @@
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/white"
                 android:fontFamily="@font/playfair_display"
-                android:hint="Username"
+                android:hint="@string/Username"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColor="@color/white" />
@@ -104,7 +104,7 @@
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/white"
                 android:fontFamily="@font/playfair_display"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:textColor="@color/white" />
@@ -116,7 +116,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="10dp"
                 android:padding="15dp"
-                android:text="SignUp"
+                android:text="@string/singup"
                 android:textStyle="bold"
                 app:cornerRadius="20dp"
                 app:elevation="10dp" />

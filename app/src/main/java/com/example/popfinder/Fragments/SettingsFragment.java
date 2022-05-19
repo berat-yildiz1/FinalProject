@@ -2,9 +2,12 @@ package com.example.popfinder.Fragments;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
+import android.content.res.Resources;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -20,15 +23,25 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.popfinder.Constant.AllConstant;
+import com.example.popfinder.Constant.LanguageConfig;
+import com.example.popfinder.Constant.LanguageFlagClass;
+import com.example.popfinder.Constant.LocaleHelper;
 import com.example.popfinder.LoginActivity;
 import com.example.popfinder.Permissions.AppPermissions;
 import com.example.popfinder.R;
 import com.example.popfinder.SignUpActivity;
 import com.example.popfinder.Utility.LoadingDialog;
+import com.example.popfinder.databinding.ActivityDirectionBinding;
+import com.example.popfinder.databinding.ActivityForgetBinding;
+import com.example.popfinder.databinding.ActivityLoginBinding;
+import com.example.popfinder.databinding.FragmentHomeBinding;
 import com.example.popfinder.databinding.FragmentSettingsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -48,15 +61,28 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.example.popfinder.Constant.AllConstant;
 
 
 public class SettingsFragment extends Fragment {
 
     private FragmentSettingsBinding binding;
+    private ActivityDirectionBinding activityDirectionBinding;
+    private ActivityForgetBinding activityForgetBinding;
+    private ActivityLoginBinding activityLoginBinding;
     private FirebaseAuth firebaseAuth;
     private LoadingDialog loadingDialog;
     private AppPermissions appPermissions;
     private Uri imageUri;
+    private LanguageFlagClass languageFlagClass;
+    private FragmentHomeBinding fragmentHomeBinding;
+    private boolean lang_selected= true;
+    private MediaPlayer mediaPlayer;
+
+
+
+
+
 
 
     @Override
@@ -67,6 +93,9 @@ public class SettingsFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
         loadingDialog = new LoadingDialog(getActivity());
         appPermissions = new AppPermissions();
+        languageFlagClass = new LanguageFlagClass ();
+
+
 
         binding.imgCamera.setOnClickListener(camera -> {
 
@@ -93,15 +122,25 @@ public class SettingsFragment extends Fragment {
         binding.cardLogout.setOnClickListener(logout ->{
             logout();
         });
+        binding.havalKornarelative.setOnClickListener ( havalı->{
+            sounds ();
+
+        } );
+
         return binding.getRoot();
     }
+
+    private void sounds (){
+
+        mediaPlayer = MediaPlayer.create ( requireContext(),R.raw.krn);
+        mediaPlayer.start ();
+    }
+
 
     private void logout() {
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
         View view = LayoutInflater.from(requireContext()).inflate(R.layout.log_out_dialog, null, false);
         builder.setView(view);
-
-
         builder.setTitle("Logout!");
 
         builder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
@@ -123,6 +162,8 @@ public class SettingsFragment extends Fragment {
                 })
                 .create().show();
     }
+
+
 
     private void goPasswordChange() {
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
@@ -238,6 +279,8 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
 
         // ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Ayarlar");
         binding.txtEmail.setText(firebaseAuth.getCurrentUser().getEmail());
@@ -399,6 +442,8 @@ public class SettingsFragment extends Fragment {
                 })
                 .create().show();
     }
+
+
 
 
 }

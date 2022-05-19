@@ -3,11 +3,19 @@ package com.example.popfinder;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.popfinder.Constant.LanguageConfig;
+import com.example.popfinder.Constant.LocaleHelper;
 import com.example.popfinder.R;
 import com.example.popfinder.Utility.LoadingDialog;
 import com.example.popfinder.databinding.ActivityLoginBinding;
@@ -21,6 +29,18 @@ public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding;
     private String email, password;
     private LoadingDialog loadingDialog;
+    Context context;
+    Context boscontext;
+    Resources resources;
+    static String tutulandil="en";
+
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+
+        Context context1 = LanguageConfig.changeLanguage ( newBase,tutulandil );
+        super.attachBaseContext ( context1 );
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +62,41 @@ public class LoginActivity extends AppCompatActivity {
                 login();
             }
         });
+        binding.btnLanguages.setOnClickListener ( new View.OnClickListener () {
+            @Override
+            public void onClick(View view1) {
+
+                final String[] language={"en" , "tr"};
+                final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                View view = LayoutInflater.from(LoginActivity.this).inflate(R.layout.log_out_dialog, null, false);
+                builder.setView(view);
+                builder.setTitle ( "Select a Language" ).setSingleChoiceItems ( language, -1, new DialogInterface.OnClickListener () {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+
+                        if(which==0){
+                                tutulandil=language[which];
+
+                        }
+                        if(which==1){
+                            tutulandil=language[which];
+                        }
+                        System.out.println ("sssssss"+ which);
+
+                    }
+                } )
+                        .setPositiveButton ("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                startActivity(new Intent(LoginActivity.this, LoginActivity.class));
+
+                            }
+                        });
+                builder.create().show();
+
+            }
+        } );
+
     }
 
     private void login() {

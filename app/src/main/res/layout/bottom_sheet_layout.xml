@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/timeLayout"
         android:layout_marginTop="10dp"
-        android:text="Fastest route"
+        android:text="@string/Fastestroute"
         android:textColor="@color/quantum_grey600"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view"
         android:layout_marginTop="20dp"
-        android:text="Steps"
+        android:text="@string/Steps"
         android:textColor="@color/quantum_black_text"
         android:textSize="20dp"
         android:textStyle="bold" />

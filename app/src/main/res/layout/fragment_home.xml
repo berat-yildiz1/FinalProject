@@ -46,8 +46,9 @@
                 android:drawableStart="@drawable/ic_location"
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/primaryColor"
-                android:hint="Search Place"
                 android:inputType="text"
+                android:hint="@string/search_Place"
+
                 android:maxLines="1"
                 android:textColorHint="@color/itemTextColor" />
         </com.google.android.material.textfield.TextInputLayout>

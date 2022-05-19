@@ -5,27 +5,27 @@
         <item
             android:id="@+id/btnHome"
             android:icon="@drawable/ic_home"
-            android:title="Home" />
+            android:title="@string/Home" />
 
         <item
             android:id="@+id/btnSavedPlaces"
             android:icon="@drawable/ic_location"
-            android:title="Saved Places" />
+            android:title="@string/SavedPlaces" />
 
 
 
-        <item android:title="Guide">
+        <item android:title="@string/Guide">
             android:icon="@drawable/ic_next"
             <menu>
                 <item
                     android:id="@+id/btnGuide"
                     android:icon="@drawable/ic_next"
-                    android:title="Search Guide"
+                    android:title="@string/SearchGuide"
                     />
                 <item
                     android:id="@+id/btnAddGuide"
                     android:icon="@drawable/ic_edit"
-                    android:title="Add Guide"
+                    android:title="@string/AddGuide"
                     />
 
 
@@ -39,17 +39,17 @@
             <item
                 android:id="@+id/btnSetting"
                 android:icon="@drawable/ic_setting"
-                android:title="Settings" />
+                android:title="@string/Setting" />
 
             <item
                 android:id="@+id/btnHelp"
                 android:icon="@drawable/ic_help"
-                android:title="Help" />
+                android:title="@string/Help" />
 
             <item
                 android:id="@+id/btnAbout"
                 android:icon="@drawable/ic_info"
-                android:title="About" />
+                android:title="@string/About" />
         </menu>
     </item>
 

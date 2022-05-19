@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final TextView baslikgiris;
+
+  @NonNull
   public final ImageView btnFacebook;
 
   @NonNull
@@ -30,6 +34,9 @@ public final class ActivityLoginBinding implements ViewBinding {
 
   @NonNull
   public final ImageView btnInstagram;
+
+  @NonNull
+  public final ImageButton btnLanguages;
 
   @NonNull
   public final MaterialButton btnLogin;
@@ -46,15 +53,17 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView txtForgetPassword;
 
-  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull ImageView btnFacebook,
-      @NonNull ImageView btnGoogle, @NonNull ImageView btnInstagram,
-      @NonNull MaterialButton btnLogin, @NonNull MaterialButton btnSignUp,
-      @NonNull EditText edtEmail, @NonNull EditText edtPassword,
+  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull TextView baslikgiris,
+      @NonNull ImageView btnFacebook, @NonNull ImageView btnGoogle, @NonNull ImageView btnInstagram,
+      @NonNull ImageButton btnLanguages, @NonNull MaterialButton btnLogin,
+      @NonNull MaterialButton btnSignUp, @NonNull EditText edtEmail, @NonNull EditText edtPassword,
       @NonNull TextView txtForgetPassword) {
     this.rootView = rootView;
+    this.baslikgiris = baslikgiris;
     this.btnFacebook = btnFacebook;
     this.btnGoogle = btnGoogle;
     this.btnInstagram = btnInstagram;
+    this.btnLanguages = btnLanguages;
     this.btnLogin = btnLogin;
     this.btnSignUp = btnSignUp;
     this.edtEmail = edtEmail;
@@ -89,6 +98,12 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.baslikgiris;
+      TextView baslikgiris = ViewBindings.findChildViewById(rootView, id);
+      if (baslikgiris == null) {
+        break missingId;
+      }
+
       id = R.id.btnFacebook;
       ImageView btnFacebook = ViewBindings.findChildViewById(rootView, id);
       if (btnFacebook == null) {
@@ -104,6 +119,12 @@ public final class ActivityLoginBinding implements ViewBinding {
       id = R.id.btnInstagram;
       ImageView btnInstagram = ViewBindings.findChildViewById(rootView, id);
       if (btnInstagram == null) {
+        break missingId;
+      }
+
+      id = R.id.btnLanguages;
+      ImageButton btnLanguages = ViewBindings.findChildViewById(rootView, id);
+      if (btnLanguages == null) {
         break missingId;
       }
 
@@ -137,8 +158,9 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((RelativeLayout) rootView, btnFacebook, btnGoogle,
-          btnInstagram, btnLogin, btnSignUp, edtEmail, edtPassword, txtForgetPassword);
+      return new ActivityLoginBinding((RelativeLayout) rootView, baslikgiris, btnFacebook,
+          btnGoogle, btnInstagram, btnLanguages, btnLogin, btnSignUp, edtEmail, edtPassword,
+          txtForgetPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
